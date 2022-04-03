@@ -1,0 +1,40 @@
+# Nmap 7.92 scan initiated Sun Feb 20 17:34:06 2022 as: nmap -vvv -p 22,80,445 -sC -sV -oN scans/rustscan 10.10.47.219
+Nmap scan report for 10.10.47.219
+Host is up, received syn-ack (0.21s latency).
+Scanned at 2022-02-20 17:34:07 UTC for 57s
+
+PORT    STATE SERVICE REASON  VERSION
+22/tcp  open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 a3:6a:9c:b1:12:60:b2:72:13:09:84:cc:38:73:44:4f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDSk+lD9baengtZg1zPPR4SVHS2JWnI2fkH90VgBhh7iRQKND35/SOP13L/a3oDA3qub2FgT1ejvHA3D7wcY5ZCgq17mLXCw6WW0IDRWbH7kyPUBolc9h6ZI+Zpiyr7sUitywYRW5WCrEHpUs6ol92pR46UnXfwmsuvY6RVWaviUT95xmUZPgVUpw8PJjDU3TJpCYEtnW6AoEO0/7OSx7LkbrvMCnIitZi2mcBvfc/WbCmvtiOLsKBwh21VCXUhLAzVGZ5xOdD4rAcD3OACM/gJVGe5wJJJL1Abt/1flGBJyvYZUoz/JQxoa+HpjcRXmSa+nprBxPdvmQDjsf+UPmpegVPME9iNfkmoEWDgN/lWWZnyPC8kBzhxkM8/rQkfmJlK1F9Lq60BoF6ipj6/W1O94yzaFL7+mNRFrV86zgZhbr1l9MQyUcJoDnlCMygYo1HhkYsfGBR1Tu5M031sZpVNIEUSSfXwrlUX4k4ThaCPDsEMB941K/OUbAuhmQo2MGE=
+|   256 b9:3f:84:00:f4:d1:fd:c8:e7:8d:98:03:38:74:a1:4d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMLlGKfQy13XGzOkqSgnrB7thrs/Bh+kpzchoHn6PCCBDOZ0j3uFzQWvl5uimdLDXombozAcFHlzDjGL50hKarQ=
+|   256 d0:86:51:60:69:46:b2:e1:39:43:90:97:a6:af:96:93 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHs4NezobK71HOHpkwVK5b5LS0MgCghx1Oj4eld8ONa1
+80/tcp  open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+445/tcp open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+|_smb2-time: Protocol negotiation failed (SMB2)
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 49242/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 9848/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 58912/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 59131/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 20 17:35:04 2022 -- 1 IP address (1 host up) scanned in 58.22 seconds

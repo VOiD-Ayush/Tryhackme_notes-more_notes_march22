@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Sat Dec 11 15:02:22 2021 as: nmap -sC -sV -vv -Pn -oN scans/init 10.10.196.10
+Nmap scan report for 10.10.196.10
+Host is up, received user-set.
+Scanned at 2021-12-11 15:02:23 UTC for 202s
+All 1000 scanned ports on 10.10.196.10 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 11 15:05:45 2021 -- 1 IP address (1 host up) scanned in 202.79 seconds

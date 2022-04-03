@@ -1,0 +1,105 @@
+[
+  [
+    "julias", 
+    "Red"
+  ], 
+  [
+    "linda", 
+    "Green"
+  ], 
+  [
+    "marnie", 
+    "Yellow "
+  ], 
+  [
+    "mary_ann", 
+    "continue..."
+  ], 
+  [
+    "vincent", 
+    "Orange"
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================
+[
+  [
+    1, 
+    "Green,Orange,Red,Yellow ,continue..."
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================
+[
+  [
+    1, 
+    "notes"
+  ], 
+  [
+    1, 
+    "sqlite_sequence"
+  ], 
+  [
+    1, 
+    "users"
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================
+[
+  [
+    null, 
+    "3.26.0"
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================
+[
+  [
+    null, 
+    "CREATE TABLE \"users\" (\n\t\"id\"\tINTEGER UNIQUE,\n\t\"username\"\tTEXT NOT NULL UNIQUE,\n\t\"password\"\tTEXT NOT NULL UNIQUE,\n\tPRIMARY KEY(\"id\" AUTOINCREMENT)\n)"
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================
+[
+  [
+    null, 
+    "CREATE TABLE \"notes\" (\n\t\"id\"\tINTEGER UNIQUE,\n\t\"user_id\"\tINTEGER,\n\t\"note_sql\"\tINTEGER,\n\t\"notes\"\tTEXT,\n\tPRIMARY KEY(\"id\")\n)"
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================
+[
+  [
+    1, 
+    "I have left my notes on the server.  They will me help get the family back together. "
+  ], 
+  [
+    1, 
+    "My Password is eaf0651dabef9c7de8a70843030924d335a2a8ff5fd1b13c4cb099e66efe25ecaa607c4b7dd99c43b0c01af669c90fd6a14933422cf984324f645b84427343f4\n"
+  ]
+]
+
+"The username or password passed are not correct."
+
+==========================================================
+==========================================================

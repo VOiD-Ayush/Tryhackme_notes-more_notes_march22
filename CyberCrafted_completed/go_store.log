@@ -1,0 +1,22 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://store.cybercrafted.thm/
+[+] Method:                  GET
+[+] Threads:                 80
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              txt,html,php
+[+] Timeout:                 10s
+===============================================================
+2021/11/20 01:05:27 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.html            (Status: 403) [Size: 287]
+/.hta.php             (Status: 403) [Size: 287]
+/.hta.txt             (Status: 403) [Size: 287]
+/.hta                 (Status: 403) [Size: 287]
+/assets               (Status: 301) [Size: 333] [--> http://store.cybercrafted.thm/assets/]
+/index.html           (Status: 403) [Size: 287]                                            
+/index.html           (Status: 403) [Size: 287]                                            

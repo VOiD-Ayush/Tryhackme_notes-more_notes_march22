@@ -1,0 +1,214 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://nahamstore.thm
+[+] Method:       GET
+[+] Threads:      10
+[+] Wordlist:     /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+[+] User Agent:   gobuster/3.1.0
+[+] Timeout:      10s
+===============================================================
+2022/01/18 12:53:32 Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: cpanel.nahamstore.thm (Status: 200) [Size: 923]
+Found: webmail.nahamstore.thm (Status: 200) [Size: 924]
+Found: webdisk.nahamstore.thm (Status: 200) [Size: 924]
+Found: mail.nahamstore.thm (Status: 200) [Size: 921]   
+Found: ftp.nahamstore.thm (Status: 200) [Size: 920]    
+Found: pop.nahamstore.thm (Status: 200) [Size: 920]    
+Found: www.nahamstore.thm (Status: 301) [Size: 194]    
+Found: whm.nahamstore.thm (Status: 200) [Size: 920]    
+Found: ns1.nahamstore.thm (Status: 200) [Size: 920]    
+Found: smtp.nahamstore.thm (Status: 200) [Size: 921]   
+Found: localhost.nahamstore.thm (Status: 200) [Size: 926]
+Found: ns2.nahamstore.thm (Status: 200) [Size: 920]      
+Found: autodiscover.nahamstore.thm (Status: 200) [Size: 929]
+Found: test.nahamstore.thm (Status: 200) [Size: 921]        
+Found: autoconfig.nahamstore.thm (Status: 200) [Size: 927]  
+Found: ns.nahamstore.thm (Status: 200) [Size: 919]          
+Found: ns3.nahamstore.thm (Status: 200) [Size: 920]         
+Found: dev.nahamstore.thm (Status: 200) [Size: 920]         
+Found: blog.nahamstore.thm (Status: 200) [Size: 921]        
+Found: m.nahamstore.thm (Status: 200) [Size: 918]           
+Found: www2.nahamstore.thm (Status: 200) [Size: 921]        
+Found: pop3.nahamstore.thm (Status: 200) [Size: 921]        
+Found: mx.nahamstore.thm (Status: 200) [Size: 919]          
+Found: vpn.nahamstore.thm (Status: 200) [Size: 920]         
+Found: mail2.nahamstore.thm (Status: 200) [Size: 922]       
+Found: admin.nahamstore.thm (Status: 200) [Size: 922]       
+Found: forum.nahamstore.thm (Status: 200) [Size: 922]       
+Found: imap.nahamstore.thm (Status: 200) [Size: 921]        
+Found: mobile.nahamstore.thm (Status: 200) [Size: 923]      
+Found: new.nahamstore.thm (Status: 200) [Size: 920]         
+Found: old.nahamstore.thm (Status: 200) [Size: 920]         
+Found: mysql.nahamstore.thm (Status: 200) [Size: 922]       
+Found: shop.nahamstore.thm (Status: 301) [Size: 194]        
+Found: beta.nahamstore.thm (Status: 200) [Size: 921]        
+Found: support.nahamstore.thm (Status: 200) [Size: 924]     
+Found: secure.nahamstore.thm (Status: 200) [Size: 923]      
+Found: cp.nahamstore.thm (Status: 200) [Size: 919]          
+Found: ns4.nahamstore.thm (Status: 200) [Size: 920]         
+Found: dns2.nahamstore.thm (Status: 200) [Size: 921]        
+Found: demo.nahamstore.thm (Status: 200) [Size: 921]        
+Found: dns1.nahamstore.thm (Status: 200) [Size: 921]        
+Found: static.nahamstore.thm (Status: 200) [Size: 923]      
+Found: lists.nahamstore.thm (Status: 200) [Size: 922]       
+Found: web.nahamstore.thm (Status: 200) [Size: 920]         
+Found: news.nahamstore.thm (Status: 200) [Size: 921]        
+Found: www1.nahamstore.thm (Status: 200) [Size: 921]        
+Found: img.nahamstore.thm (Status: 200) [Size: 920]         
+Found: wiki.nahamstore.thm (Status: 200) [Size: 921]        
+Found: api.nahamstore.thm (Status: 200) [Size: 920]         
+Found: portal.nahamstore.thm (Status: 200) [Size: 923]      
+Found: server.nahamstore.thm (Status: 200) [Size: 923]      
+Found: media.nahamstore.thm (Status: 200) [Size: 922]       
+Found: images.nahamstore.thm (Status: 200) [Size: 923]      
+Found: backup.nahamstore.thm (Status: 200) [Size: 923]      
+Found: www.blog.nahamstore.thm (Status: 200) [Size: 925]    
+Found: sql.nahamstore.thm (Status: 200) [Size: 920]         
+Found: dns.nahamstore.thm (Status: 200) [Size: 920]         
+Found: stats.nahamstore.thm (Status: 200) [Size: 922]       
+Found: www.forum.nahamstore.thm (Status: 200) [Size: 926]   
+Found: intranet.nahamstore.thm (Status: 200) [Size: 925]    
+Found: www.test.nahamstore.thm (Status: 200) [Size: 925]    
+Found: video.nahamstore.thm (Status: 200) [Size: 922]       
+Found: host.nahamstore.thm (Status: 200) [Size: 921]        
+Found: mx1.nahamstore.thm (Status: 200) [Size: 920]         
+Found: mail1.nahamstore.thm (Status: 200) [Size: 922]       
+Found: search.nahamstore.thm (Status: 200) [Size: 923]      
+Found: sip.nahamstore.thm (Status: 200) [Size: 920]         
+Found: www.m.nahamstore.thm (Status: 200) [Size: 922]       
+Found: www3.nahamstore.thm (Status: 200) [Size: 921]        
+Found: staging.nahamstore.thm (Status: 200) [Size: 924]     
+Found: chat.nahamstore.thm (Status: 200) [Size: 921]        
+Found: crm.nahamstore.thm (Status: 200) [Size: 920]         
+Found: mx2.nahamstore.thm (Status: 200) [Size: 920]         
+Found: store.nahamstore.thm (Status: 200) [Size: 922]       
+Found: email.nahamstore.thm (Status: 200) [Size: 922]       
+Found: svn.nahamstore.thm (Status: 200) [Size: 920]         
+Found: remote.nahamstore.thm (Status: 200) [Size: 923]      
+Found: ads.nahamstore.thm (Status: 200) [Size: 920]         
+Found: wap.nahamstore.thm (Status: 200) [Size: 920]         
+Found: ipv4.nahamstore.thm (Status: 200) [Size: 921]        
+Found: my.nahamstore.thm (Status: 200) [Size: 919]          
+Found: cms.nahamstore.thm (Status: 200) [Size: 920]         
+Found: download.nahamstore.thm (Status: 200) [Size: 925]    
+Found: www.dev.nahamstore.thm (Status: 200) [Size: 924]     
+Found: proxy.nahamstore.thm (Status: 200) [Size: 922]       
+Found: dns3.nahamstore.thm (Status: 200) [Size: 921]        
+Found: mssql.nahamstore.thm (Status: 200) [Size: 922]       
+Found: mail3.nahamstore.thm (Status: 200) [Size: 922]       
+Found: exchange.nahamstore.thm (Status: 200) [Size: 925]    
+Found: apps.nahamstore.thm (Status: 200) [Size: 921]        
+Found: forums.nahamstore.thm (Status: 200) [Size: 923]      
+Found: ns5.nahamstore.thm (Status: 200) [Size: 920]         
+Found: office.nahamstore.thm (Status: 200) [Size: 923]      
+Found: live.nahamstore.thm (Status: 200) [Size: 921]        
+Found: owa.nahamstore.thm (Status: 200) [Size: 920]         
+Found: info.nahamstore.thm (Status: 200) [Size: 921]        
+Found: db.nahamstore.thm (Status: 200) [Size: 919]          
+Found: files.nahamstore.thm (Status: 200) [Size: 922]       
+Found: helpdesk.nahamstore.thm (Status: 200) [Size: 925]    
+Found: panel.nahamstore.thm (Status: 200) [Size: 922]       
+Found: monitor.nahamstore.thm (Status: 200) [Size: 924]     
+Found: sms.nahamstore.thm (Status: 200) [Size: 920]         
+Found: home.nahamstore.thm (Status: 200) [Size: 921]        
+Found: upload.nahamstore.thm (Status: 200) [Size: 923]      
+Found: web2.nahamstore.thm (Status: 200) [Size: 921]        
+Found: app.nahamstore.thm (Status: 200) [Size: 920]         
+Found: web1.nahamstore.thm (Status: 200) [Size: 921]        
+Found: login.nahamstore.thm (Status: 200) [Size: 922]       
+Found: ftp2.nahamstore.thm (Status: 200) [Size: 921]        
+Found: bbs.nahamstore.thm (Status: 200) [Size: 920]         
+Found: newsletter.nahamstore.thm (Status: 200) [Size: 927]  
+Found: en.nahamstore.thm (Status: 200) [Size: 919]          
+Found: blogs.nahamstore.thm (Status: 200) [Size: 922]       
+Found: dns4.nahamstore.thm (Status: 200) [Size: 921]        
+Found: gw.nahamstore.thm (Status: 200) [Size: 919]          
+Found: stage.nahamstore.thm (Status: 200) [Size: 922]       
+Found: it.nahamstore.thm (Status: 200) [Size: 919]          
+Found: cdn.nahamstore.thm (Status: 200) [Size: 920]         
+Found: cn.nahamstore.thm (Status: 200) [Size: 919]          
+Found: www.demo.nahamstore.thm (Status: 200) [Size: 925]    
+Found: ssl.nahamstore.thm (Status: 200) [Size: 920]         
+Found: smtp2.nahamstore.thm (Status: 200) [Size: 922]       
+Found: vps.nahamstore.thm (Status: 200) [Size: 920]         
+Found: online.nahamstore.thm (Status: 200) [Size: 923]      
+Found: relay.nahamstore.thm (Status: 200) [Size: 922]       
+Found: ns6.nahamstore.thm (Status: 200) [Size: 920]         
+Found: test2.nahamstore.thm (Status: 200) [Size: 922]       
+Found: service.nahamstore.thm (Status: 200) [Size: 924]     
+Found: library.nahamstore.thm (Status: 200) [Size: 924]     
+Found: radio.nahamstore.thm (Status: 200) [Size: 922]       
+Found: ntp.nahamstore.thm (Status: 200) [Size: 920]         
+Found: help.nahamstore.thm (Status: 200) [Size: 921]        
+Found: www4.nahamstore.thm (Status: 200) [Size: 921]        
+Found: members.nahamstore.thm (Status: 200) [Size: 924]     
+Found: www.shop.nahamstore.thm (Status: 200) [Size: 925]    
+Found: tv.nahamstore.thm (Status: 200) [Size: 919]          
+Found: hosting.nahamstore.thm (Status: 200) [Size: 924]     
+Found: extranet.nahamstore.thm (Status: 200) [Size: 925]    
+Found: ldap.nahamstore.thm (Status: 200) [Size: 921]        
+Found: services.nahamstore.thm (Status: 200) [Size: 925]    
+Found: webdisk.blog.nahamstore.thm (Status: 200) [Size: 929]
+Found: s1.nahamstore.thm (Status: 200) [Size: 919]          
+Found: survey.nahamstore.thm (Status: 200) [Size: 923]      
+Found: www.mail.nahamstore.thm (Status: 200) [Size: 925]    
+Found: s.nahamstore.thm (Status: 200) [Size: 918]           
+Found: i.nahamstore.thm (Status: 200) [Size: 918]           
+Found: www.new.nahamstore.thm (Status: 200) [Size: 924]     
+Found: c-n7k-v03-01.rz.nahamstore.thm (Status: 200) [Size: 932]
+Found: docs.nahamstore.thm (Status: 200) [Size: 921]           
+Found: data.nahamstore.thm (Status: 200) [Size: 921]           
+Found: c-n7k-n04-01.rz.nahamstore.thm (Status: 200) [Size: 932]
+Found: ad.nahamstore.thm (Status: 200) [Size: 919]             
+Found: legacy.nahamstore.thm (Status: 200) [Size: 923]         
+Found: de.nahamstore.thm (Status: 200) [Size: 919]             
+Found: router.nahamstore.thm (Status: 200) [Size: 923]         
+Found: cs.nahamstore.thm (Status: 200) [Size: 919]             
+Found: sftp.nahamstore.thm (Status: 200) [Size: 921]           
+Found: av.nahamstore.thm (Status: 200) [Size: 919]             
+Found: meet.nahamstore.thm (Status: 200) [Size: 921]           
+Found: stat.nahamstore.thm (Status: 200) [Size: 921]           
+Found: server1.nahamstore.thm (Status: 200) [Size: 924]        
+Found: facebook.nahamstore.thm (Status: 200) [Size: 925]       
+Found: moodle.nahamstore.thm (Status: 200) [Size: 923]         
+Found: nagios.nahamstore.thm (Status: 200) [Size: 923]         
+Found: partner.nahamstore.thm (Status: 200) [Size: 924]        
+Found: photo.nahamstore.thm (Status: 200) [Size: 922]          
+Found: test1.nahamstore.thm (Status: 200) [Size: 922]          
+Found: s2.nahamstore.thm (Status: 200) [Size: 919]             
+Found: mrtg.nahamstore.thm (Status: 200) [Size: 921]           
+Found: dev2.nahamstore.thm (Status: 200) [Size: 921]           
+Found: mailadmin.nahamstore.thm (Status: 200) [Size: 926]      
+Found: autoconfig.blog.nahamstore.thm (Status: 200) [Size: 932]
+Found: ts.nahamstore.thm (Status: 200) [Size: 919]             
+Found: autodiscover.blog.nahamstore.thm (Status: 200) [Size: 934]
+Found: gateway.nahamstore.thm (Status: 200) [Size: 924]          
+Found: preview.nahamstore.thm (Status: 200) [Size: 924]          
+Found: host2.nahamstore.thm (Status: 200) [Size: 922]            
+Found: jobs.nahamstore.thm (Status: 200) [Size: 921]             
+Found: games.nahamstore.thm (Status: 200) [Size: 922]            
+Found: image.nahamstore.thm (Status: 200) [Size: 922]            
+Found: www.support.nahamstore.thm (Status: 200) [Size: 928]      
+Found: ssh.nahamstore.thm (Status: 200) [Size: 920]              
+Found: im.nahamstore.thm (Status: 200) [Size: 919]               
+Found: correo.nahamstore.thm (Status: 200) [Size: 923]           
+Found: control.nahamstore.thm (Status: 200) [Size: 924]          
+Found: cloud.nahamstore.thm (Status: 200) [Size: 922]            
+Found: vpn2.nahamstore.thm (Status: 200) [Size: 921]             
+Found: webdisk.m.nahamstore.thm (Status: 200) [Size: 926]        
+Found: archive.nahamstore.thm (Status: 200) [Size: 924]          
+Found: ns0.nahamstore.thm (Status: 200) [Size: 920]              
+Found: citrix.nahamstore.thm (Status: 200) [Size: 923]           
+Found: connect.nahamstore.thm (Status: 200) [Size: 924]          
+Found: voip.nahamstore.thm (Status: 200) [Size: 921]             
+Found: lib.nahamstore.thm (Status: 200) [Size: 920]              
+Found: smtp1.nahamstore.thm (Status: 200) [Size: 922]            
+Found: game.nahamstore.thm (Status: 200) [Size: 921]             
+Found: access.nahamstore.thm (Status: 200) [Size: 923]           
+Found: www5.nahamstore.thm (Status: 200) [Size: 921]             
+Found: redmine.nahamstore.thm (Status: 200) [Size: 924]          
+Found: es.nahamstore.thm (Status: 200) [Size: 919]               
+Found: gallery.nahamstore.thm (Status: 200) [Size: 924]          

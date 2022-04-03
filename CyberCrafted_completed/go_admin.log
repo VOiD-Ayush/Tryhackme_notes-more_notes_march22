@@ -1,0 +1,28 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://admin.cybercrafted.thm/
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2021/11/20 01:17:03 Starting gobuster in directory enumeration mode
+===============================================================
+/.htpasswd.php        (Status: 403) [Size: 287]
+/.hta                 (Status: 403) [Size: 287]
+/.htpasswd.txt        (Status: 403) [Size: 287]
+/.htaccess.txt        (Status: 403) [Size: 287]
+/.htpasswd.html       (Status: 403) [Size: 287]
+/.hta.html            (Status: 403) [Size: 287]
+/.htaccess            (Status: 403) [Size: 287]
+/.hta.php             (Status: 403) [Size: 287]
+/.htpasswd            (Status: 403) [Size: 287]
+/.htaccess.html       (Status: 403) [Size: 287]
+/.hta.txt             (Status: 403) [Size: 287]
+/.htaccess.php        (Status: 403) [Size: 287]
+/assets               (Status: 301) [Size: 333] [--> http://admin.cybercrafted.thm/assets/]

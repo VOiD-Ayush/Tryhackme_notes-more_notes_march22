@@ -1,0 +1,39 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.158.49:8890/portal/
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2022/02/19 20:19:48 Starting gobuster in directory enumeration mode
+===============================================================
+/templates            (Status: 301) [Size: 330] [--> http://10.10.158.49:8890/portal/templates/]
+/services             (Status: 301) [Size: 329] [--> http://10.10.158.49:8890/portal/services/] 
+/images               (Status: 301) [Size: 327] [--> http://10.10.158.49:8890/portal/images/]   
+/index.php            (Status: 302) [Size: 0] [--> interface/login/login.php?site=default]      
+/modules              (Status: 301) [Size: 328] [--> http://10.10.158.49:8890/portal/modules/]  
+/common               (Status: 301) [Size: 327] [--> http://10.10.158.49:8890/portal/common/]   
+/library              (Status: 301) [Size: 328] [--> http://10.10.158.49:8890/portal/library/]  
+/public               (Status: 301) [Size: 327] [--> http://10.10.158.49:8890/portal/public/]   
+/version.php          (Status: 200) [Size: 0]                                                   
+/admin.php            (Status: 200) [Size: 937]                                                 
+/portal               (Status: 403) [Size: 279]                                                 
+/tests                (Status: 301) [Size: 326] [--> http://10.10.158.49:8890/portal/tests/]    
+/sites                (Status: 301) [Size: 326] [--> http://10.10.158.49:8890/portal/sites/]    
+/custom               (Status: 301) [Size: 327] [--> http://10.10.158.49:8890/portal/custom/]   
+/contrib              (Status: 301) [Size: 328] [--> http://10.10.158.49:8890/portal/contrib/]  
+/interface            (Status: 301) [Size: 330] [--> http://10.10.158.49:8890/portal/interface/]
+/vendor               (Status: 301) [Size: 327] [--> http://10.10.158.49:8890/portal/vendor/]   
+/config               (Status: 301) [Size: 327] [--> http://10.10.158.49:8890/portal/config/]   
+/setup.php            (Status: 200) [Size: 1214]                                                
+/Documentation        (Status: 301) [Size: 334] [--> http://10.10.158.49:8890/portal/Documentation/]
+/sql                  (Status: 301) [Size: 324] [--> http://10.10.158.49:8890/portal/sql/]          
+/controller.php       (Status: 403) [Size: 279]                                                     
+/LICENSE              (Status: 200) [Size: 35147]                                                   
+/ci                   (Status: 301) [Size: 323] [--> http://10.10.158.49:8890/portal/ci/]           

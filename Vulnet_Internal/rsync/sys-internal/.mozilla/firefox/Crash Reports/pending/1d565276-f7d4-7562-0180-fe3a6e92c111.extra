@@ -1,0 +1,40 @@
+ContentSandboxLevel=3
+ContentSandboxCapabilities=119
+StartupTime=1612614667
+SafeMode=0
+ProductName=Firefox
+FramePoisonBase=9223372036600930304
+TelemetryClientId=79f3892b-d4b5-4610-a9bc-896dd47492ec
+Vendor=Mozilla
+InstallTime=1612186632
+ReleaseChannel=release
+Notes=FP(D00-L1000-W00000000-T000) OpenGL: VMware, Inc. -- llvmpipe (LLVM 6.0, 256 bits) -- 3.0 Mesa 18.0.0-rc5 -- texture_from_pixmap\nWR? WR- OMTP? OMTP- Ubuntu 18.04 LTS
+FramePoisonSize=4096
+TelemetryEnvironment={"build":{"applicationId":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","applicationName":"Firefox","architecture":"x86-64","buildId":"20180406121424","version":"59.0.2","vendor":"Mozilla","platformVersion":"59.0.2","xpcomAbi":"x86_64-gcc3","hotfixVersion":null,"updaterAvailable":false},"partner":{"distributionId":"canonical","distributionVersion":"1.0","partnerId":"ubuntu","distributor":"canonical","distributorChannel":"ubuntu","partnerNames":["ubuntu"]},"system":{"memoryMB":1993,"virtualMaxMB":null,"cpu":{"count":1,"cores":1,"vendor":"GenuineIntel","family":6,"model":60,"stepping":3,"l2cacheKB":256,"l3cacheKB":6144,"speedMHz":null,"extensions":["hasMMX","hasSSE","hasSSE2","hasSSE3","hasSSSE3","hasSSE4_1","hasSSE4_2","hasAVX","hasAVX2","hasAES"]},"os":{"name":"Linux","version":"4.15.0-135-generic","locale":"en-US"},"hdd":{"profile":{"model":null,"revision":null},"binary":{"model":null,"revision":null},"system":{"model":null,"revision":null}},"gfx":{"D2DEnabled":null,"DWriteEnabled":null,"ContentBackend":"Skia","adapters":[{"description":"VMware, Inc. -- llvmpipe (LLVM 6.0, 256 bits)","vendorID":"VMware, Inc.","deviceID":"llvmpipe (LLVM 6.0, 256 bits)","subsysID":null,"RAM":null,"driver":null,"driverVersion":"3.0 Mesa 18.0.0-rc5","driverDate":null,"GPUActive":true}],"monitors":[],"features":{"compositor":"basic","gpuProcess":{"status":"unused"}}},"appleModelId":null},"settings":{"blocklistEnabled":true,"e10sEnabled":true,"e10sMultiProcesses":4,"telemetryEnabled":false,"locale":"en-US","update":{"channel":"release","enabled":false,"autoDownload":true},"userPrefs":{"browser.cache.disk.capacity":348160,"browser.newtabpage.enhanced":true,"browser.search.region":"PL","browser.search.widget.inNavBar":false},"sandbox":{"effectiveContentProcessLevel":3},"addonCompatibilityCheckEnabled":true,"isDefaultBrowser":false,"defaultSearchEngine":"google","defaultSearchEngineData":{"name":"Google","loadPath":"[distribution]/searchplugins/locale/en-US/google.xml","origin":"default","submissionURL":"https://www.google.com/search?client=ubuntu&channel=fs&q=&ie=utf-8&oe=utf-8"}},"profile":{"creationDate":18659},"addons":{"activeAddons":{"activity-stream@mozilla.org":{"version":"2018.02.17.0026-173e2795","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"A rich visual history feed and a reimagined home page make it easier than ever to find exactly what ","name":"Activity Stream","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"aushelper@mozilla.org":{"version":"2.0","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"Sets value(s) in the update url based on custom checks.","name":"Application Update Service Helper","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"firefox@getpocket.com":{"version":"1.0.5","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"When you find something you want to view later, put it in Pocket.","name":"Pocket","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"followonsearch@mozilla.com":{"version":"0.9.6","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":null,"name":"Follow-on Search Telemetry","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"formautofill@mozilla.org":{"version":"1.0","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"Autofill forms with saved profiles","name":"Form Autofill","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"onboarding@mozilla.org":{"version":"1.0","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"Photon onboarding","name":"Photon onboarding","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"screenshots@mozilla.org":{"version":"25.0.0","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":null,"name":"Firefox Screenshots","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"shield-recipe-client@mozilla.org":{"version":"80","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"Client to download and run recipes for SHIELD, Heartbeat, etc.","name":"Shield Recipe Client","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616},"webcompat@mozilla.org":{"version":"1.1","scope":1,"type":"extension","updateDay":17616,"isSystem":true,"isWebExtension":false,"multiprocessCompatible":true,"blocklisted":false,"description":"Urgent post-release fixes for web compatibility.","name":"Web Compat","userDisabled":false,"appDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616}},"theme":{"id":"{972ce4c6-7e08-4474-a285-3208198ce6fd}","blocklisted":false,"description":"The default theme.","name":"Default","userDisabled":false,"appDisabled":false,"version":"59.0.2","scope":4,"foreignInstall":false,"hasBinaryComponents":false,"installDay":17616,"updateDay":17616},"activePlugins":[],"activeGMPlugins":{"gmp-gmpopenh264":{"version":"1.7.1","userDisabled":false,"applyBackgroundUpdates":1}},"activeExperiment":{},"persona":null}}
+GraphicsCriticalError=|[0][GFX1-]: Unrecognized feature WEBRENDER (t=153.687) 
+ServerURL=https://crash-reports.mozilla.com/submit?id={ec8030f7-c20a-464f-9b0e-13a3a9e97384}&version=59.0.2&buildid=20180406121424
+ShutdownProgress=quit-application
+Version=59.0.2
+ContentSandboxCapable=1
+useragent_locale=en-US
+StartupCrash=0
+BuildID=20180406121424
+ProductID={ec8030f7-c20a-464f-9b0e-13a3a9e97384}
+TelemetryServerURL=https://incoming.telemetry.mozilla.org
+URL=http://localhost:8111/overview.html
+DOMIPCEnabled=1
+Add-ons=activity-stream%40mozilla.org:2018.02.17.0026-173e2795,aushelper%40mozilla.org:2.0,firefox%40getpocket.com:1.0.5,followonsearch%40mozilla.com:0.9.6,formautofill%40mozilla.org:1.0,onboarding%40mozilla.org:1.0,screenshots%40mozilla.org:25.0.0,shield-recipe-client%40mozilla.org:80,webcompat%40mozilla.org:1.1,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:59.0.2
+CrashTime=1612615626
+UptimeTS=959.33392555
+additional_minidumps=browser
+ipc_channel_error=ShutDownKill
+ContentSandboxLevel=3
+ContentSandboxEnabled=1
+ProcessType=content
+DOMIPCEnabled=1
+RemoteType=web
+Notes=FP(D00-L1000-W00000000-T000) WR? WR- OMTP? OMTP- 
+IPCShutdownState=RecvShutdown
+StartupTime=1612614669
+URL=http://localhost:8111/overview.html
+ContentSandboxCapabilities=119

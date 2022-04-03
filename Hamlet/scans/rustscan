@@ -1,0 +1,135 @@
+# Nmap 7.92 scan initiated Fri Jan 28 06:03:42 2022 as: nmap -vvv -p 21,22,80,501,8000,8080 -sC -sV -oN scans/rustscan 10.10.222.126
+Nmap scan report for 10.10.222.126
+Host is up, received syn-ack (0.26s latency).
+Scanned at 2022-01-28 06:03:43 UTC for 47s
+
+PORT     STATE SERVICE    REASON  VERSION
+21/tcp   open  ftp        syn-ack vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.253.221
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| -rwxr-xr-x    1 0        0             113 Sep 15 14:45 password-policy.md
+|_-rw-r--r--    1 0        0            1425 Sep 15 14:48 ufw.status
+22/tcp   open  ssh        syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a0:ef:4c:32:28:a6:4c:7f:60:d6:a6:63:32:ac:ab:27 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5/i3O28uWolhittypXr6mAEk+XOV998o/e/3wIWpGq9J1GhtGc3J4uwYpBt7SiS3mZivq9D5jgFhqhHb6zlBsQmGUnXUnQNYyqrBmGnyl4urp5IuV1sRCdNXQdt/lf6Z9A807OPuCkzkAexFUV28eXqdXpRsXXkqgkl5DCm2WEtV7yxPIbGlcmX+arDT9A5kGTZe9rNDdqzSafz0aVKRWoTHGHuqVmq0oPD3Cc3oYfoLu7GTJV+Cy6Hxs3s6oUVcruoi1JYvbxC9whexOr+NSZT9mGxDSDLS6jEMim2DQ+hNhiT49JXcMXhQ2nOYqBXLZF0OYyNKaGdgG35CIT40z
+|   256 5a:6d:1a:39:97:00:be:c7:10:6e:36:5c:7f:ca:dc:b2 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHtt/3Q8agNKO48Zw3srosCs+bfCx47O+i4tBUX7VGMSpzTJQS3s4DBhGvrvO+d/u9B4e9ZBgWSqo+aDqGsTZxQ=
+|   256 0b:77:40:b2:cc:30:8d:8e:45:51:fa:12:7c:e2:95:c7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN4jv01JeDGsDfhWIJMF8HBv26FI18VLpBeNoiSGbKVp
+80/tcp   open  http       syn-ack lighttpd 1.4.45
+|_http-title: Hamlet Annotation Project
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-server-header: lighttpd/1.4.45
+501/tcp  open  tcpwrapped syn-ack
+8000/tcp open  http       syn-ack Apache httpd 2.4.48 ((Debian))
+|_http-server-header: Apache/2.4.48 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-open-proxy: Proxy might be redirecting requests
+8080/tcp open  http-proxy syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 500 
+|     Content-Type: application/json;charset=UTF-8
+|     Date: Fri, 28 Jan 2022 06:03:57 GMT
+|     Connection: close
+|     {"timestamp":1643349838499,"status":500,"error":"Internal Server Error","exception":"org.springframework.security.web.firewall.RequestRejectedException","message":"The request was rejected because the URL contained a potentially malicious String "%2e"","path":"/nice%20ports%2C/Tri%6Eity.txt%2ebak"}
+|   GetRequest: 
+|     HTTP/1.1 302 
+|     Set-Cookie: JSESSIONID=4329ACACC24D435980CC5F1F0265F892; Path=/; HttpOnly
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+|     Pragma: no-cache
+|     Expires: 0
+|     X-Frame-Options: SAMEORIGIN
+|     Location: http://localhost:8080/login.html
+|     Content-Length: 0
+|     Date: Fri, 28 Jan 2022 06:03:55 GMT
+|     Connection: close
+|   HTTPOptions: 
+|     HTTP/1.1 302 
+|     Set-Cookie: JSESSIONID=722F3499DEA950DB14BDEF4C6718B2D7; Path=/; HttpOnly
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+|     Pragma: no-cache
+|     Expires: 0
+|     X-Frame-Options: SAMEORIGIN
+|     Location: http://localhost:8080/login.html
+|     Content-Length: 0
+|     Date: Fri, 28 Jan 2022 06:03:55 GMT
+|     Connection: close
+|   RTSPRequest: 
+|     HTTP/1.1 400 
+|     Content-Type: text/html;charset=utf-8
+|     Content-Language: en
+|     Content-Length: 435
+|     Date: Fri, 28 Jan 2022 06:03:57 GMT
+|     Connection: close
+|     <!doctype html><html lang="en"><head><title>HTTP Status 400 
+|     Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 
+|_    Request</h1></body></html>
+| http-title: WebAnno - Log in 
+|_Requested resource was http://10.10.222.126:8080/login.html
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-favicon: Spring Java Framework
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.92%I=7%D=1/28%Time=61F38746%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,18F,"HTTP/1\.1\x20302\x20\r\nSet-Cookie:\x20JSESSIONID=4329ACA
+SF:CC24D435980CC5F1F0265F892;\x20Path=/;\x20HttpOnly\r\nX-Content-Type-Opt
+SF:ions:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nCache-Cont
+SF:rol:\x20no-cache,\x20no-store,\x20max-age=0,\x20must-revalidate\r\nPrag
+SF:ma:\x20no-cache\r\nExpires:\x200\r\nX-Frame-Options:\x20SAMEORIGIN\r\nL
+SF:ocation:\x20http://localhost:8080/login\.html\r\nContent-Length:\x200\r
+SF:\nDate:\x20Fri,\x2028\x20Jan\x202022\x2006:03:55\x20GMT\r\nConnection:\
+SF:x20close\r\n\r\n")%r(HTTPOptions,18F,"HTTP/1\.1\x20302\x20\r\nSet-Cooki
+SF:e:\x20JSESSIONID=722F3499DEA950DB14BDEF4C6718B2D7;\x20Path=/;\x20HttpOn
+SF:ly\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20
+SF:mode=block\r\nCache-Control:\x20no-cache,\x20no-store,\x20max-age=0,\x2
+SF:0must-revalidate\r\nPragma:\x20no-cache\r\nExpires:\x200\r\nX-Frame-Opt
+SF:ions:\x20SAMEORIGIN\r\nLocation:\x20http://localhost:8080/login\.html\r
+SF:\nContent-Length:\x200\r\nDate:\x20Fri,\x2028\x20Jan\x202022\x2006:03:5
+SF:5\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(RTSPRequest,24E,"HTTP/1\.1
+SF:\x20400\x20\r\nContent-Type:\x20text/html;charset=utf-8\r\nContent-Lang
+SF:uage:\x20en\r\nContent-Length:\x20435\r\nDate:\x20Fri,\x2028\x20Jan\x20
+SF:2022\x2006:03:57\x20GMT\r\nConnection:\x20close\r\n\r\n<!doctype\x20htm
+SF:l><html\x20lang=\"en\"><head><title>HTTP\x20Status\x20400\x20\xe2\x80\x
+SF:93\x20Bad\x20Request</title><style\x20type=\"text/css\">body\x20{font-f
+SF:amily:Tahoma,Arial,sans-serif;}\x20h1,\x20h2,\x20h3,\x20b\x20{color:whi
+SF:te;background-color:#525D76;}\x20h1\x20{font-size:22px;}\x20h2\x20{font
+SF:-size:16px;}\x20h3\x20{font-size:14px;}\x20p\x20{font-size:12px;}\x20a\
+SF:x20{color:black;}\x20\.line\x20{height:1px;background-color:#525D76;bor
+SF:der:none;}</style></head><body><h1>HTTP\x20Status\x20400\x20\xe2\x80\x9
+SF:3\x20Bad\x20Request</h1></body></html>")%r(FourOhFourRequest,1A4,"HTTP/
+SF:1\.1\x20500\x20\r\nContent-Type:\x20application/json;charset=UTF-8\r\nD
+SF:ate:\x20Fri,\x2028\x20Jan\x202022\x2006:03:57\x20GMT\r\nConnection:\x20
+SF:close\r\n\r\n{\"timestamp\":1643349838499,\"status\":500,\"error\":\"In
+SF:ternal\x20Server\x20Error\",\"exception\":\"org\.springframework\.secur
+SF:ity\.web\.firewall\.RequestRejectedException\",\"message\":\"The\x20req
+SF:uest\x20was\x20rejected\x20because\x20the\x20URL\x20contained\x20a\x20p
+SF:otentially\x20malicious\x20String\x20\\\"%2e\\\"\",\"path\":\"/nice%20p
+SF:orts%2C/Tri%6Eity\.txt%2ebak\"}");
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 28 06:04:30 2022 -- 1 IP address (1 host up) scanned in 48.31 seconds

@@ -1,0 +1,36 @@
+# Nmap 7.92 scan initiated Fri Nov  5 22:52:08 2021 as: nmap -sC -sV -vv -p 22,30024 -oN scans/ports 10.10.179.47
+Nmap scan report for 10.10.179.47
+Host is up, received conn-refused (0.22s latency).
+Scanned at 2021-11-05 22:52:09 IST for 12s
+
+PORT      STATE SERVICE REASON  VERSION
+22/tcp    open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f3:a2:ed:93:4b:9c:bf:bb:33:4d:48:0d:fe:a4:de:96 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9/A7kkuN5E+SS1C6w1NfeY196Rj4Y1Yx7njNCwNaCgIv8m+V+7MTHsRn3txLXRTHXErMqW3ypCmmjuY3O40kAragZSgA/XhdesGxGVa0szHK7H4fB28uQiyZgkOfIt/12kGaHB3iGwOeex2Hdg6ct4FdxTWKgDvuKZSLVoPXG66R8SOHql2cXfUtzyUMNJTTqoUED69soEJVG2ctfPKXi4BfFqM3OK2HgKzbmcSPXlLUTNhlcvjPuTa0kMRqiNTMVdP0PjSFdoaMviXHiznW7Fn6NHe3R/vIQt8Ac05Mdvim21QjRpJ4pm7v5+q1wXCJxGG6Ov71yThKP6yZ4ByMl
+|   256 22:72:00:36:eb:37:12:9f:5a:cc:c2:73:e0:4f:f1:4e (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM9QUKykbzCSI7+PgoVzHNKOVIWf+zm0LN/f4n0VJc/P0J9TzLImkYHIOCnRFpNUPtiWGXbHXi67FQxEpgZMReo=
+|   256 78:1d:79:dc:8d:41:f6:77:60:65:f5:74:b6:cc:8b:6d (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKrvf1zJBhqU1RxUCYuTgoIy+7NzCqZeFWV67bt8+APV
+30024/tcp open  ftp     syn-ack vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| -rw-r--r--    1 ftp      ftp          1743 Mar 23  2021 id_rsa
+|_-rw-r--r--    1 ftp      ftp            78 Mar 23  2021 note.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.253.221
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+Service Info: OSs: Linux, Unix; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov  5 22:52:21 2021 -- 1 IP address (1 host up) scanned in 12.49 seconds

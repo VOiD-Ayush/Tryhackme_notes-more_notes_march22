@@ -1,0 +1,30 @@
+# Nmap 7.92 scan initiated Sat Nov 13 00:59:15 2021 as: nmap -sC -sV -vv -p 22,80,2222,8022 -oN scans/ports 10.10.41.132
+Nmap scan report for 10.10.41.132
+Host is up, received conn-refused (0.24s latency).
+Scanned at 2021-11-13 00:59:16 IST for 207s
+
+PORT     STATE SERVICE       REASON  VERSION
+22/tcp   open  ssh           syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a6:3e:80:d9:b0:98:fd:7e:09:6d:34:12:f9:15:8a:18 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNZuuEok1Fj1PzF8NErC0Norql6X1jpgY1lgab4Ic+p22Xim2fsz9G8oxBWQvLHc57LP8oOJkxb4SkJA1bCSvpDXXRXcFZJYyTtDkJuJiLzQYfUSFNlb7uJ3UbtXJmhB+0cioQqmoPNR0PMHkzOt/iKmcXz/zxWpa9KDtwg/DKO7tXbXlwCU75gM9TA/CzpV42X8jLdg3GKDN45ZIUD127SVB+WUTE3NO12RHOWGKEuVrYzhpt/J2FR1othrB4SC4tjB1mOuKOYQB/w20BVDvLCc/U0kwR3bRP9OyuGCcL6KjHTcqhBASBUSMdZERF4kW3oKneFU/ogel3+xDEV9xP
+|   256 ec:5f:8a:1d:59:b3:59:2f:49:ef:fb:f4:4a:d0:1d:7a (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBP1L2DsLekoih3uch4TYfg20+y0iLFupq1oBqmPpfaXcwPWVSHBSl6VfN99qidxKzOXWH7bC7qNKCLZQOKUUIZo=
+|   256 b1:4a:22:dc:7f:60:e4:fc:08:0c:55:4f:e4:15:e0:fa (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINfYJj6Alf9dI+KYygs+hOfPWUWVebXmTM0zvW4khYy0
+80/tcp   open  http          syn-ack Apache httpd 2.4.29 ((Ubuntu))
+2222/tcp open  EtherNetIP-1? syn-ack
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+8022/tcp open  ssh           syn-ack OpenSSH 7.7p1 Ubuntu 4ppa1+obfuscated (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 dc:ae:ea:27:3f:ab:10:ae:8c:2e:b3:0c:5b:d5:42:bc (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHgrBPgmDTsPn83i4u4uWVdahGI5ANp7amcDEcLIFVp1cdhBFALpbNkt5GcUsZ/Am2OKfNo05BZLg1BhJmp116UbUd6qnOTTRbY7MOTypZdmj52t3tH5UVUASArpaKxbrtCjv8iI+ObyZL4rRZ6oRtRmT2nxDzrFLDj6sZPvgNXZBQp/LUWvHPgTtoRj4mGNIK+5gFQa3xK3N4YIwui1yF5zTGlSq8m1snJGCqH6oOjNhCtGbrVB4nWURht0ghLQKqWre2MxSAlSusnZyJ7P9wjg6g9jbampTtJyyximiY/rZQbIrjsxp8UOyQSyvFrSN4PFyGoZRRzV7iZfDj0TU3
+|   256 67:29:75:04:74:1b:83:d3:c8:de:6d:65:fe:e6:07:35 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJoRWFBMbPHOdswibH5Hfnr/PJQCaBrVIWqUpiKJYv0WDk4XIK0IfEE13PpGdh5VMc12K4ghQf6hSv0WlBlAmlg=
+|   256 7f:7e:89:c4:e0:a0:da:92:6e:a6:70:45:fc:43:23:84 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHqBJjq2u9t8+rXyrVY3VxrR5VDyoa+1MwEUpvsn6CtG
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 13 01:02:43 2021 -- 1 IP address (1 host up) scanned in 208.00 seconds

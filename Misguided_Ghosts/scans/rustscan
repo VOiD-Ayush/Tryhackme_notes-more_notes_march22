@@ -1,0 +1,85 @@
+# Nmap 7.92 scan initiated Mon Feb 21 18:28:02 2022 as: nmap -vvv -p 22,21,8080 -sC -sV -oN scans/rustscan 10.10.31.45
+Nmap scan report for 10.10.31.45
+Host is up, received conn-refused (0.30s latency).
+Scanned at 2022-02-21 18:28:03 UTC for 56s
+
+PORT     STATE SERVICE  REASON  VERSION
+21/tcp   open  ftp      syn-ack vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.253.221
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 ftp      ftp          4096 Aug 28  2020 pub
+22/tcp   open  ssh      syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d9:91:89:96:af:bc:06:b9:8d:43:df:53:dc:1f:8f:12 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9IDvQd1gdoX05XWxhJT/V9SmKjyuZF45PHMiFEBOB3tDCcnBjFU7MeB+hRxYIVQ/gDupx4T9eBmh3f/v6N/cP2saOkCP1CsmaBANAwFe2t6jdKBnzzxb95J2xAAQgXlthLcMRzq07jqOu0eNT+m/Cq6mRo/bWCgx33OpUhILmAqXXgACw6eslNS8qxCh2/zCQVV2bfTydc3XMTATbWBoPq/mImFfnm0UumErn2uGQYiKFgKFJwV3hpG5fsqrYeWWFZmukljyn8sbjEctH7U19Bbb/9V1G9HjRZYBOTApm+7Ds3axxbrrqF/f9QDdCbu91yAi4mVeqOhjOIF/GCN/T
+|   256 25:0b:be:a2:f9:64:3e:f1:e3:15:e8:23:b8:8c:e5:16 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCDsj0erpJ38s3yq182eEiOigD4wlNXRcY7nkWD7hHi89SNGO3WjPLqZxtWDMMn8CD8Bzf8zZBFFsZteCGimotw=
+|   256 09:59:9a:84:e6:6f:01:f3:33:8e:48:44:52:49:14:db (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMFWXM1xds09Lx7X42b+YR+kfDp1G1IxAU+bS7hXEKjO
+8080/tcp open  ssl/http syn-ack Werkzeug httpd 1.0.1 (Python 2.7.18)
+|_http-server-header: Werkzeug/1.0.1 Python/2.7.18
+| ssl-cert: Subject: commonName=misguided_ghosts.thm/organizationName=Misguided Ghosts/stateOrProvinceName=Williamson Country/countryName=TN/localityName=Franklin/emailAddress=zac@misguided_ghosts.thm
+| Issuer: commonName=misguided_ghosts.thm/organizationName=Misguided Ghosts/stateOrProvinceName=Williamson Country/countryName=TN/localityName=Franklin/emailAddress=zac@misguided_ghosts.thm
+| Public Key type: rsa
+| Public Key bits: 4096
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-08-11T16:52:11
+| Not valid after:  2021-08-11T16:52:11
+| MD5:   81a2 a5d0 19ea 9ef4 37e9 ebfd b6cc 6d9f
+| SHA-1: 0ea3 45de 594b 091c 1972 8e43 a7da d929 78c5 0a02
+| -----BEGIN CERTIFICATE-----
+| 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
+|_-----END CERTIFICATE-----
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-title: Misguided Ghosts
+|_ssl-date: TLS randomness does not represent time
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb 21 18:28:59 2022 -- 1 IP address (1 host up) scanned in 56.86 seconds

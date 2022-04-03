@@ -1,0 +1,89 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.144.34/
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              txt,html,php
+[+] Timeout:                 10s
+===============================================================
+2021/11/27 17:46:18 Starting gobuster in directory enumeration mode
+===============================================================
+/.htpasswd            (Status: 403) [Size: 277]
+/.hta.html            (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htpasswd.html       (Status: 403) [Size: 277]
+/.htaccess.html       (Status: 403) [Size: 277]
+/.htpasswd.php        (Status: 403) [Size: 277]
+/.htaccess.php        (Status: 403) [Size: 277]
+/.htpasswd.txt        (Status: 403) [Size: 277]
+/.htaccess.txt        (Status: 403) [Size: 277]
+/.hta.php             (Status: 403) [Size: 277]
+/.hta.txt             (Status: 403) [Size: 277]
+/.hta                 (Status: 403) [Size: 277]
+/admin                (Status: 301) [Size: 312] [--> http://10.10.144.34/admin/]
+/adminpanel           (Status: 200) [Size: 240]                                 
+/adminlogon           (Status: 200) [Size: 5785]                                
+/administrator        (Status: 200) [Size: 241]                                 
+/analyse              (Status: 200) [Size: 443]                                 
+/announcements.php    (Status: 200) [Size: 8832]                                
+/archive              (Status: 301) [Size: 314] [--> http://10.10.144.34/archive/]
+/attachment.php       (Status: 200) [Size: 8834]                                  
+/attachment           (Status: 200) [Size: 240]                                   
+/blue                 (Status: 200) [Size: 241]                                   
+/cache                (Status: 301) [Size: 312] [--> http://10.10.144.34/cache/]  
+/calendar.php         (Status: 200) [Size: 25872]                                 
+/captcha.php          (Status: 200) [Size: 0]                                     
+/change_password      (Status: 200) [Size: 240]                                   
+/contact.php          (Status: 200) [Size: 9936]                                  
+/css.php              (Status: 200) [Size: 0]                                     
+/e-mail               (Status: 200) [Size: 240]                                   
+/editpost.php         (Status: 200) [Size: 9603]                                  
+/error                (Status: 200) [Size: 240]                                   
+/files                (Status: 200) [Size: 240]                                   
+/flag                 (Status: 200) [Size: 240]                                   
+/forumdisplay.php     (Status: 200) [Size: 8982]                                  
+/ftp                  (Status: 200) [Size: 240]                                   
+/general              (Status: 200) [Size: 233]                                   
+/global.php           (Status: 200) [Size: 98]                                    
+/images               (Status: 301) [Size: 313] [--> http://10.10.144.34/images/] 
+/inc                  (Status: 301) [Size: 310] [--> http://10.10.144.34/inc/]    
+/index.php            (Status: 200) [Size: 10588]                                 
+/index.php            (Status: 200) [Size: 10588]                                 
+/install              (Status: 301) [Size: 314] [--> http://10.10.144.34/install/]
+/jscripts             (Status: 301) [Size: 315] [--> http://10.10.144.34/jscripts/]
+/login                (Status: 200) [Size: 241]                                    
+/memberlist.php       (Status: 200) [Size: 31959]                                  
+/member.php           (Status: 302) [Size: 0] [--> index.php]                      
+/misc.php             (Status: 200) [Size: 0]                                      
+/moderation.php       (Status: 200) [Size: 9596]                                   
+/modcp.php            (Status: 200) [Size: 9683]                                   
+/newreply.php         (Status: 200) [Size: 8830]                                   
+/newthread.php        (Status: 200) [Size: 8807]                                   
+/online.php           (Status: 200) [Size: 9845]                                   
+/panel                (Status: 200) [Size: 241]                                    
+/polls.php            (Status: 200) [Size: 0]                                      
+/portal.php           (Status: 200) [Size: 11991]                                  
+/printthread.php      (Status: 200) [Size: 8830]                                   
+/private.php          (Status: 200) [Size: 9684]                                   
+/ratethread.php       (Status: 200) [Size: 8895]                                   
+/report.php           (Status: 200) [Size: 9603]                                   
+/reputation.php       (Status: 200) [Size: 8849]                                   
+/search.php           (Status: 200) [Size: 14791]                                  
+/rss.php              (Status: 302) [Size: 0] [--> syndication.php]                
+/secret               (Status: 200) [Size: 241]                                    
+/sendthread.php       (Status: 200) [Size: 8830]                                   
+/server-status        (Status: 403) [Size: 277]                                    
+/showthread.php       (Status: 200) [Size: 9002]                                   
+/stats.php            (Status: 200) [Size: 10250]                                  
+/syndication.php      (Status: 200) [Size: 395]                                    
+/task.php             (Status: 200) [Size: 43]                                     
+/uploads              (Status: 301) [Size: 314] [--> http://10.10.144.34/uploads/] 
+/usercp.php           (Status: 200) [Size: 9772]                                   
+===============================================================
+2021/11/27 17:48:32 Finished
+===============================================================

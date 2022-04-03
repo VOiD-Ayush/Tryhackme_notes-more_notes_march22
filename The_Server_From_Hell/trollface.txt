@@ -1,0 +1,327 @@
+1 550 12345 0000000000000000000000000000000000000000000000000000000
+2 550 12345 0000000000000000000000000000000000000000000000000000000
+3 550 12345 0000000000000000000000000000000000000000000000000000000
+4 550 12345 0000000000000000000000000000000000000000000000000000000
+5 550 12345 0000000000000000000000000000000000000000000000000000000
+6 550 12345 0ffffffffffffffffffffffffffffffffffffffffffffffffffff00
+7 550 12345 0fffffffffffff777778887777777777cffffffffffffffffffff00
+8 550 12345 0fffffffffff8000000000000000008888887cfcfffffffffffff00
+9 550 12345 0ffffffffff80000088808000000888800000008887ffffffffff00
+10 550 12345 0fffffffff70000088800888800088888800008800007ffffffff00
+11 550 12345 0fffffffff000088808880000000000000088800000008fffffff00
+12 550 12345 0ffffffff80008808880000000880000008880088800008ffffff00
+13 550 12345 0ffffffff000000888000000000800000080000008800007fffff00
+14 550 12345 0fffffff8000000000008888000000000080000000000007fffff00
+15 550 12345 0ffffff70000000008cffffffc0000000080000000000008fffff00
+16 550 12345 0ffffff8000000008ffffff007f8000000007cf7c80000007ffff00
+17 550 12345 0fffff7880000780f7cffff7800f8000008fffffff80808807fff00
+18 550 12345 0fff78000878000077800887fc8f80007fffc7778800000880cff00
+19 550 12345 0ff70008fc77f7000000f80008f8000007f0000000000000888ff00
+20 550 12345 0ff0008f00008ffc787f70000000000008f000000087fff8088cf00
+21 550 12345 0f7000f800770008777 go to port 12345 80008f7f700880cf00
+22 550 12345 0f8008c008fff8000000000000780000007f800087708000800ff00
+23 550 12345 0f8008707ff07ff8000008088ff800000000f7000000f800808ff00
+24 550 12345 0f7000f888f8007ff7800000770877800000cf780000ff00807ff00
+25 550 12345 0ff0808800cf0000ffff70000f877f70000c70008008ff8088fff00
+26 550 12345 0ff70800008ff800f007fff70880000087f70000007fcf7007fff00
+27 550 12345 0fff70000007fffcf700008ffc778000078000087ff87f700ffff00
+28 550 12345 0ffffc000000f80fff700007787cfffc7787fffff0788f708ffff00
+29 550 12345 0fffff7000008f00fffff78f800008f887ff880770778f708ffff00
+30 550 12345 0ffffff8000007f0780cffff700000c000870008f07fff707ffff00
+31 550 12345 0ffffcf7000000cfc00008fffff777f7777f777fffffff707ffff00
+32 550 12345 0cccccff0000000ff000008c8cffffffffffffffffffff807ffff00
+33 550 12345 0fffffff70000000ff8000c700087fffffffffffffffcf808ffff00
+34 550 12345 0ffffffff800000007f708f000000c0888ff78f78f777c008ffff00
+35 550 12345 0fffffffff800000008fff7000008f0000f808f0870cf7008ffff00
+36 550 12345 0ffffffffff7088808008fff80008f0008c00770f78ff0008ffff00
+37 550 12345 0fffffffffffc8088888008cffffff7887f87ffffff800000ffff00
+38 550 12345 0fffffffffffff7088888800008777ccf77fc777800000000ffff00
+39 550 12345 0fffffffffffffff800888880000000000000000000800800cfff00
+40 550 12345 0fffffffffffffffff70008878800000000000008878008007fff00
+41 550 12345 0fffffffffffffffffff700008888800000000088000080007fff00
+42 550 12345 0fffffffffffffffffffffc800000000000000000088800007fff00
+43 550 12345 0fffffffffffffffffffffff7800000000000008888000008ffff00
+44 550 12345 0fffffffffffffffffffffffff7878000000000000000000cffff00
+45 550 12345 0ffffffffffffffffffffffffffffffc880000000000008ffffff00
+46 550 12345 0ffffffffffffffffffffffffffffffffff7788888887ffffffff00
+47 550 12345 0ffffffffffffffffffffffffffffffffffffffffffffffffffff00
+48 550 12345 0000000000000000000000000000000000000000000000000000000
+49 550 12345 0000000000000000000000000000000000000000000000000000000
+50 550 12345 0000000000000000000000000000000000000000000000000000000
+51 HTTP/1.1 200 OK 
+Content-type: text/xml
+x<resolved count='0 ommitted='1 chumbhowld_ver='fWl'>
+<resolve interface='7 name='sHOXwci' type='_http._tcp.'
+
+52 HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="MRtxyx"
+Server: Embedded HTTPD v0D, n
+
+
+53 HTTP/1.0 200 OK
+Server: RapidLogic/lEn
+MIME-version: 1.0
+Content-type: text/html
+Set-Cookie: auth=l path=/
+
+Ôªøh<title>Logon</title>yif (window.focus) self.focus();
+
+54 ˇ˝ˇ˝ˇ˚ˇ˚
+Welcome to GoodTech Telnet Server for Windows 95/98 (V6920828) (Evaluation Copy)
+
+(C) Copyright 85GoodTech Systems, Inc.
+
+
+Login username: 
+
+55 SSH-555811653-libssh-TJYYbpgH?
+
+
+56 ˇ˚[0m[2J[0m[9;20HCopyright(C) 1995-99 D-Link Systems Inc.[13;30HUser Name[14;30HPassword[23;10HMAC Address:[8;29HZev Console Program[13;41H
+
+57 ˇ˝ˇ˝ˇ˝!ˇ˚ˇ˚
+
+GO Networks MBW System - WLP
+SW Version: wLF
+
+User Name:
+
+58 00000wvcwmiscbroavgpeˇcW¯(ß˚*Windows Version: 5.1 (2) build 2600 Service Pack 66bit (ExtremeZ-IP XEpSDTXx10)AFP2.2AFP3.1mafpserver/-ENi0
+
+59 HTTP/1.0 200 OK
+HTTP/1.0 200 OK
+Server: ap
+Connection: close
+Cache-Control: must-revalidate = no-cache
+Content-Type: text/html
+Expires: 0
+Last-Modified: 0
+
+<html>  
+<head><title>IEEE802.11b Wireless LAN Access Point
+
+60 RTSP/1.0 200 OK
+jServer: Helix Mobile Server Version iPKAf_qZ (win32) (RealServer compatible)
+Public: OPTIONS, DESCRIBE, PLAY, PAUSE, SETUP, GET_PARAMETER, SET_PARAMETER, TEARDOWN
+TurboPlay: 1
+RealChallenge1: 3
+StatsMask: 8
+
+
+
+61 ˇ˚ˇ˚ˇ˚0ˇ˝0Username: data_error
+(rdata_error
+data_error
+data_error
+data_error
+data_error
+data_error
+data_error
+data_error
+data_error
+|
+
+62 0˛000rj
+
+63 nmproxy: Procotol byte is not 8
+
+
+64 RTSP/1.0 400 Bad Request
+Server: QTSS/114568 (Build/561122; Platform/MacOSX)
+
+
+65 HTTP/1.1 200 Ok
+Server: micro_httpd
+p<title>ADSL Router</title>
+
+
+<script language="javascript">
+<!--
+var ModemVer='DSL-xJkj';
+
+66 58:Dnetstring format error while receiving QMQP packet header,
+
+67 ˇ˚ˇ˚
+
+ Welcome to OpenVMS (TM) Alpha Operating System, Version VTrhk_Ke  
+
+Username: 
+
+68 HTTP/1.0 138 xWWW-Authenticate: Basic realm="Linksys WAP51AB"
+
+
+69 match ftp m%^220-loading..
+220-|           W e L c O m E @ SFXP|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|
+% p/SwiftFXP/
+
+70 ˇ˝ˇ˝ˇ˝!ˇ˚ˇ˚
+PLi dm500 Jade 2(based on AwvX)
+welcome on your dreambox! - Kernel BGE (293488101).
+dm500 login: 
+
+71 HTTP/1.1 302 Found
+uServer: NessusWWW
+iContent-Type: text/html
+aLocation: https://cYyM-/html5.html
+Cache-Control: 
+Expires: 0
+Pragma : 
+
+
+
+72 00Y00U0pheuhuiufohpkjfntluqynkosucpfdfw00(090805000
+03020/000000	00000000#00
+
+73 "raop" nonce
+
+74 HTTP/1.1 200 OK
+Content-type: text/html
+Cache-Control: no-cache
+
+<BODY><CENTER><H2><BR><BR>LevelOne GSW-s
+75 220-Rival Group FTP Server
+220-Unauthorized access prohibited
+220 All activity is logged.
+214-CesarFTP server dD supports the following commands:
+214-ABOR ACCT ALLO APPE CDUP CWD  DELE HELP LIST
+214-MDTM MKD  MODE NLST NOOP PASS PASV PORT PWD 
+214-QUIT REIN REST RETR RMD  RNFR RNTO SITE SMNT
+214-STAT STOR STOU STRU SYST TYPE
+214-
+214-CesarFTP server t-kxP supports specific commands
+214-invoked with the SITE command:
+214-
+214-SITE MSG
+214-
+214 
+
+
+76 HTTP/1.0 401 Authorization Required
+WWW-Authenticate: BASIC realm="Administrator or User"
+
+Password Error. 
+
+
+
+77 HTTP/1.1 178 v
+Server: HP Web Jetadmin 2NGppfuZBK
+
+
+78 HTTP/1.1 379 yServer: Mono-HTTPAPI/JHV_l
+
+
+79 ˇ˝ˇ˝!ˇ˚ˇ˚
+Error: 
+Telnet has NOT been enabled on your target VTrak 15100 system
+
+
+80 * OK [CAPABILITY IMAP4REV1 AUTH=LOGIN -hwvHD] IMAP4rev1 DavMail KAqFXD server ready
+
+
+81 (err (type xen.xend.XendError.XendError) (value 'Invalid operation: GET'))
+
+
+82 HTTP/1.1 200 OK
+w<title>Grandstream Device Configuration</title>
+l<form action="dologin.htm" method="post" name="loginForm">
+
+83 HTTP/1.1 200 OK
+Date: d
+Expires: r
+Cache-control: private
+Content-type: text/html
+
+<html><body><table width="100%" border="0" cellspacing="10" cellpadding="5">  <tr>    <td colspan="2"  bgcolor="#00304B"><h1><FONT COLOR="white">Enistic Smart Energy Controller</FONT></h1>
+
+84 200
+Protocol-Version:49
+Message-ID:8r
+Database i
+Content-Length:3r
+
+c:\.*ini
+
+
+
+85 220 BLhwv running IBM MVS SMTP CS ion q
+
+
+86 ˇ˝ˇ˝!ˇ˚ˇ˚                        =======================
+                               ufcgzGmHu +
+                        =======================
+Login: 
+
+87 DRINASD00000he<?xml version="1.0" encoding="utf-8"?>
+
+<ESATMUpdate>
+    <mESAUpdateSignature>ESAINFO</mESAUpdateSignature>
+    <mESAUpdateVersion>1/mESAUpdateVersion>
+    <mESAUpdateSize>4/mESAUpdateSize>
+    <mESAID>x/mESAID>
+    <mSerial>s/mSerial>
+    <mName>Drobo?:-FS?</mName>
+    <mVersion>qj_ ]+</mVersion>
+    <mReleaseDate>—dëÃ-ÉhÄ </mReleaseDate>
+
+
+88 HTTP/1.1 400 Bad Request
+xServer: Apache
+v<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+
+89 HTTP/1.1 501 Not Implemented
+Content-Type: text/html
+Connection: close
+Content-Length: 149
+Server: Gentoo/HP DLNADOC/ORpYvdd-K UPnP/sLrGcShM MiniDLNA/rtBN
+
+
+90 ~ÅÅxa0°¢8{14}Z§36778423500796Z•x02?:hcn|mx|q¶©NM™0†0°0krbtgtNM´(&Client not found in Kerberos database0
+
+91 SSH-2.0-6{8,12}?
+
+
+92 HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="Web Server"
+Content-type: text/html
+
+<html>
+<body><h1>401 Unauthorized</h1></body></html>
+
+
+93 3202 your host does not have line printer access.
+
+94 ®C0000000000000000000000000000000000000000000000000000000000000000000
+
+95 0000000v00000x0
+
+96 220S+ ESMTP Postfix
+
+97 HTTP/1.0 401 Authorization Required
+WWW-Authenticate: Basic realm="HERCULES"
+
+
+98 HTTP/1.1 400 Bad Request
+Content-Type: text/htmlm
+<meta name=robots content="none">
+<title>Secure&#32;Access&#32;SSL&#32;VPN</title>
+
+
+
+99 HTTP/1.0 302
+Location: /Portal0000.htm
+i<HTML><HEAD><TITLE>Error</TITLE></HEAD>
+<BODY><CENTER><H2>/<BR><BR>302 : MOVED TEMPORARILY</H2></CENTER></BODY></HTML>
+
+100 HTTP/1.1 401 Unauthorized
+Www-Authenticate: Basic REALM="snom"
+Content-Type: text/plain
+Content-Length: 22
+
+Unauthorized request
+
+

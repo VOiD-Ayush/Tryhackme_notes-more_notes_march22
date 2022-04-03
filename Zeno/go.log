@@ -1,0 +1,32 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.127.232:12340/
+[+] Method:                  GET
+[+] Threads:                 80
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2021/10/23 19:26:51 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 211]
+/.hta                 (Status: 403) [Size: 206]
+/.htpasswd.txt        (Status: 403) [Size: 215]
+/.htaccess.html       (Status: 403) [Size: 216]
+/.hta.php             (Status: 403) [Size: 210]
+/.htpasswd            (Status: 403) [Size: 211]
+/.htaccess.php        (Status: 403) [Size: 215]
+/.hta.txt             (Status: 403) [Size: 210]
+/.htpasswd.html       (Status: 403) [Size: 216]
+/.htaccess.txt        (Status: 403) [Size: 215]
+/.htpasswd.php        (Status: 403) [Size: 215]
+/.hta.html            (Status: 403) [Size: 211]
+/index.html           (Status: 200) [Size: 3897]
+/index.html           (Status: 200) [Size: 3897]
+===============================================================
+2021/10/23 19:28:00 Finished
+===============================================================

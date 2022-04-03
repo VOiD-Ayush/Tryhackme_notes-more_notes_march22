@@ -1,0 +1,25 @@
+# Nmap 7.92 scan initiated Fri Dec 10 15:36:44 2021 as: nmap -sC -sV -vv -A -p 22,80,20212 -oN scans/porst 10.10.138.242
+Nmap scan report for 10.10.138.242
+Host is up, received syn-ack (0.22s latency).
+Scanned at 2021-12-10 15:36:45 UTC for 16s
+
+PORT      STATE SERVICE REASON  VERSION
+22/tcp    open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 44:76:d4:6a:6d:81:82:a4:0e:8c:3d:ef:49:12:7d:08 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDF58GiwcyDWsfikcUfJV1+I7h5TSPZCCR8h2qdZCtde4u87ftSAdq4sPRNpDbs2gtXGFGLg6DDqbasNYgZJ/l3u34g9NHlGqF6IFyxaA8FbWsQYsmlm+ihoLny57q36w6SqG8NuZJ67jSWvtiv7l81+9LtgvfGYLC3UIOBiBfw9Xw2tiFJ//6BmMdwgGkGF9OkrH4o5CxX6fmj423tSNMrOhdHwDWSftxWbg8p7keRpS+SoJJz+A+hRFg6NBr3Kyqd4PcXeqTWh3+D2BElVXYTJIq0Kp9h91qBfajjV+F6PmMf+0+7TPHvzJTalzFnIIG7O/Jnh1YYJ7vSdtsGlvYunkHMRBoFcTBoyPkvqbOmVjV4dL83OSND9alBWrZ+GbslF+tLLdKXhEo+V2FHm6N8g1Rhs/XSBOUIahjn/WHvaF2uji93fuvrY6QMd5A+Ae2d6x7iqdz2y5JgWenQG1/qW0uVj2y81sQysfjPSUptpkEoTFiwc3sNCEydTz1Uyps=
+|   256 08:e3:f1:e8:fc:fe:8c:10:f1:7d:eb:5b:85:db:94:8c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN2T5+E9HRYnzvVvG1Pm0DCF0RjTqQHAsKcgXIlBcY89AvdfyA3SUYSy7ZcoU8KlYoQ6+vfom+mqAKH2zUecw9c=
+|   256 fd:1c:ae:ce:e3:e3:69:09:4d:3f:f4:b7:c8:b6:0c:51 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO1HuiBexcEYwrAsI7h9CxbrF/f2kqhVrVHAssiYGBTr
+80/tcp    open  http    syn-ack Apache httpd 2.4.49
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.49
+20212/tcp open  telnet  syn-ack Linux telnetd
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 10 15:37:01 2021 -- 1 IP address (1 host up) scanned in 17.01 seconds

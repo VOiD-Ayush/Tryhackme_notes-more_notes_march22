@@ -1,0 +1,36 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.47.242/
+[+] Method:                  GET
+[+] Threads:                 80
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2021/11/06 21:56:21 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 277]
+/.hta.php             (Status: 403) [Size: 277]
+/.hta.txt             (Status: 403) [Size: 277]
+/.hta.html            (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htaccess.html       (Status: 403) [Size: 277]
+/.htaccess.php        (Status: 403) [Size: 277]
+/.htaccess.txt        (Status: 403) [Size: 277]
+/.htpasswd.php        (Status: 403) [Size: 277]
+/.htpasswd.txt        (Status: 403) [Size: 277]
+/.htpasswd.html       (Status: 403) [Size: 277]
+/.htpasswd            (Status: 403) [Size: 277]
+/hidden               (Status: 301) [Size: 313] [--> http://10.10.47.242/hidden/]
+/index.html           (Status: 200) [Size: 10918]                                
+/index.html           (Status: 200) [Size: 10918]                                
+/instructions.txt     (Status: 200) [Size: 339]                                  
+/server-status        (Status: 403) [Size: 277]                                  
+/whatever             (Status: 301) [Size: 315] [--> http://10.10.47.242/whatever/]
+===============================================================
+2021/11/06 21:57:32 Finished
+===============================================================

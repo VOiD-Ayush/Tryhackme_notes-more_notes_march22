@@ -1,0 +1,102 @@
+# Nmap 7.92 scan initiated Sun Nov 28 10:50:06 2021 as: nmap -sC -sV -vv -p 22,80,139,445,135,3389,49667,49663,49669 -oN scans/ports 10.10.139.172
+Nmap scan report for 10.10.139.172
+Host is up, received syn-ack (0.38s latency).
+Scanned at 2021-11-28 10:50:08 UTC for 104s
+
+PORT      STATE    SERVICE       REASON      VERSION
+22/tcp    filtered ssh           no-response
+
+80/tcp    open     http          syn-ack     Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+
+135/tcp   open     msrpc         syn-ack     Microsoft Windows RPC
+
+139/tcp   open     netbios-ssn   syn-ack     Microsoft Windows netbios-ssn
+
+445/tcp   open     microsoft-ds  syn-ack     Windows Server 2016 Standard Evaluation 14393 microsoft-ds
+
+3389/tcp  open     ms-wbt-server syn-ack     Microsoft Terminal Services
+| ssl-cert: Subject: commonName=Relevant
+| Issuer: commonName=Relevant
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-11-27T10:44:22
+| Not valid after:  2022-05-29T10:44:22
+| MD5:   1841 9a41 4da9 7c65 d815 dd30 471b 0bff
+| SHA-1: fb14 83bc 46ca 0fcf 553b f0b6 47c5 eec7 13d8 9d60
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQKIl/6BBmMbZEilhM7uP6qjANBgkqhkiG9w0BAQsFADAT
+| MREwDwYDVQQDEwhSZWxldmFudDAeFw0yMTExMjcxMDQ0MjJaFw0yMjA1MjkxMDQ0
+| MjJaMBMxETAPBgNVBAMTCFJlbGV2YW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEAis3vTJk5H6yZOe6K6xRWHX8hoF7SVlHt4W3A+IF6J418WiDsTYGC
+| QrWl+0YbFvhZHf5JIOy6Pgtzwo6CS7farA8Ryfnxk3QuieUqV6RL8PJt+Sc4lv1d
+| 9ShhG8qyGE1HP6E7Z3DvwMv7v71wknQtl1SuCvs6qWGXmeo1QRnbosCHYPXdVqqL
+| v+8J6ULhneDcQRZLlvt4fzJMMFgYflyXWHOV4YUrStOTiKOIb3HNpNIEvw7pABre
+| kwAimQ6H8eBy3KixEZVxfqKYsqfdH+clxJp5JhHKNxYes8qw/XxkmOUdCbt7qa1V
+| lZQl+dULDVVeVklJvNBGCSCeRSFmYh+RXQIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAHZRFOyT+QRS
+| HjU6SGCaL5CCH3zfVWO3j0dzrxM7hnG1AaDIqUkzGcNMqmyrUoPkh6oAHnp6gZ18
+| YrfeIsaMjcGwe7dnT/gqwvYjAaNCcRAxGsV5HTxQsm94Z0sYBkIzD7MGyCwrv6ew
+| yP7G+uTFbiG97Ksn2IE25q92MxptHcAgJLx74EmtVEhy0itXN3roIlP40AU0gpky
+| xAGv5g6SGU1r9h5jRMIFRfuTG6Ts/JCa+Ad10IjqJjc9FxY/5l6EHiMX3tK6gMeF
+| TrAS1GeZKjgpLU8jwIjVV2zmqY9WuIlnGMGl5J9wIPX7oLkQ9SQPYWzdFFZsOpUj
+| 8+RkH6OrX1k=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-11-28T10:51:56+00:00; +4s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: RELEVANT
+|   NetBIOS_Domain_Name: RELEVANT
+|   NetBIOS_Computer_Name: RELEVANT
+|   DNS_Domain_Name: Relevant
+|   DNS_Computer_Name: Relevant
+|   Product_Version: 10.0.14393
+|_  System_Time: 2021-11-28T10:51:22+00:00
+
+49663/tcp open     http          syn-ack     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+
+49667/tcp open     msrpc         syn-ack     Microsoft Windows RPC
+
+49669/tcp open     msrpc         syn-ack     Microsoft Windows RPC
+
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h36m05s, deviation: 3h34m42s, median: 3s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 37018/tcp): CLEAN (Timeout)
+|   Check 2 (port 41750/tcp): CLEAN (Timeout)
+|   Check 3 (port 10500/udp): CLEAN (Timeout)
+|   Check 4 (port 64623/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-11-28T10:51:19
+|_  start_date: 2021-11-28T10:45:03
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard Evaluation 14393 (Windows Server 2016 Standard Evaluation 6.3)
+|   Computer name: Relevant
+|   NetBIOS computer name: RELEVANT\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-11-28T02:51:20-08:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 28 10:51:52 2021 -- 1 IP address (1 host up) scanned in 106.05 seconds

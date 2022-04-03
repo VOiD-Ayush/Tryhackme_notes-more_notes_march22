@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Tue Dec 28 16:29:06 2021 as: nmap -sC -sV -vv -p 8080 -oN scans/ports 10.10.211.126
+Nmap scan report for 10.10.211.126
+Host is up, received conn-refused (0.30s latency).
+Scanned at 2021-12-28 16:29:09 UTC for 40s
+
+PORT     STATE SERVICE REASON  VERSION
+8080/tcp open  http    syn-ack Node.js Express framework
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: VulnNet &ndash; Your reliable news source &ndash; Try Now!
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 28 16:29:49 2021 -- 1 IP address (1 host up) scanned in 43.36 seconds

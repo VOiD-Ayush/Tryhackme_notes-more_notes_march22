@@ -1,0 +1,102 @@
+# Nmap 7.92 scan initiated Fri Feb 18 15:43:56 2022 as: nmap -vvv -p 21,80,443,18002,42409,45405 -sC -sV -oN scans/rustscan 10.10.33.195
+Nmap scan report for 10.10.33.195
+Host is up, received syn-ack (0.21s latency).
+Scanned at 2022-02-18 15:43:57 UTC for 177s
+
+PORT      STATE SERVICE    REASON  VERSION
+21/tcp    open  ftp?       syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, RTSPRequest, X11Probe: 
+|     220 Welcome to Anonymous FTP server (vsFTPd 3.0.3)
+|     Please login with USER and PASS.
+|   Kerberos, NULL, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|_    220 Welcome to Anonymous FTP server (vsFTPd 3.0.3)
+80/tcp    open  http       syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title:         LimeSurvey    
+|_http-generator: LimeSurvey http://www.limesurvey.org
+|_http-favicon: Unknown favicon MD5: B55AD3F0C0A029568074402CE92ACA23
+443/tcp   open  ssl/http   syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| ssl-cert: Subject: commonName=ubuntu
+| Issuer: commonName=ubuntu
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-07-23T17:27:31
+| Not valid after:  2030-07-21T17:27:31
+| MD5:   afb1 a2b9 1183 2e49 f707 9d1a 7198 9ca3
+| SHA-1: 37f1 945f 6bc4 3fad 3f0f ca8d 3788 2c17 cc25 0792
+| -----BEGIN CERTIFICATE-----
+| MIICsjCCAZqgAwIBAgIJAIIhLFTsAdpUMA0GCSqGSIb3DQEBCwUAMBExDzANBgNV
+| BAMMBnVidW50dTAeFw0yMDA3MjMxNzI3MzFaFw0zMDA3MjExNzI3MzFaMBExDzAN
+| BgNVBAMMBnVidW50dTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALm4
+| +BEIDO1MIeQZQkUZfeEqegkSYi8IGF2zvpL2zpUOCjcpm9pFZwj/ZT8g/nbdhVpX
+| Q0z3eWzFKRRZdthTOfCtNkZjQhJlpR+Fvc7QDUHSG+ugZL0nIuQMKaniom6OVuQg
+| 3nyxPehC9eYOjovV6m3TOWVHRYMRpf54RHHwwvpHwHkJAEcg7oHwBgP/JeW3h20r
+| G/Ri8FpPZs49xYArZ15te9ofw0TUigqx03RguwKLYr+/i7+UFwmzU93+ylz/PE16
+| HVfEBAFGIY52wWkc5Pt3+B+T5HZqVLqAW8LNcxSuugiMkgV1r4QQlBgNpc026aZR
+| EG6sF9C57EOQgyBVihECAwEAAaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQsF
+| AAOCAQEAXYtbViAQzTFPjlPzwItXfMsyYYkH9guFsI9l0A6/6xa6CCwklJAF1vjz
+| tpHg338NRn4CXobk9Y6aopmUsNhFwlryS5YwPQ1s5ml6GHaDQ7ijG52J4Uj1J4o5
+| nRlDgqXi8EM/Dl5cgwHBnQ3k/u3uoPp/H0jIfXK/jskVurNb/sT6Raj5TEgcgMMm
+| 8Hzj0jqSROhDZFtU93z8OCZWBaO8u+wVj0xtdHpg+X8UQalIrASlsSNn1i50lU2p
+| 0C+eASFiDrOue7gzDDO4pdYrxmG5MiRNrfKQPLv3IvT0gEgCgkulRLo//CeY1tQ9
+| 7KFSteW6LSwpqHdP08faw+/nJnfnXQ==
+|_-----END CERTIFICATE-----
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-generator: WordPress 5.4.2
+|_http-title: Ghizer &#8211; Just another WordPress site
+18002/tcp open  java-rmi   syn-ack Java RMI
+| rmi-dumpregistry: 
+|   jmxrmi
+|     javax.management.remote.rmi.RMIServerImpl_Stub
+|     @127.0.1.1:45405
+|     extends
+|       java.rmi.server.RemoteStub
+|       extends
+|_        java.rmi.server.RemoteObject
+42409/tcp open  tcpwrapped syn-ack
+45405/tcp open  java-rmi   syn-ack Java RMI
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port21-TCP:V=7.92%I=7%D=2/18%Time=620FBEC4%P=x86_64-pc-linux-gnu%r(NULL
+SF:,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x20
+SF:3\.0\.3\)\n")%r(GenericLines,58,"220\x20Welcome\x20to\x20Anonymous\x20F
+SF:TP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20with\x
+SF:20USER\x20and\x20PASS\.\n")%r(Help,58,"220\x20Welcome\x20to\x20Anonymou
+SF:s\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20
+SF:with\x20USER\x20and\x20PASS\.\n")%r(GetRequest,58,"220\x20Welcome\x20to
+SF:\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\
+SF:x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(HTTPOptions,58,"220\x20
+SF:Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n5
+SF:30\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(RTSPReques
+SF:t,58,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x2
+SF:03\.0\.3\)\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\n")
+SF:%r(RPCCheck,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\
+SF:(vsFTPd\x203\.0\.3\)\n")%r(DNSVersionBindReqTCP,58,"220\x20Welcome\x20t
+SF:o\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please
+SF:\x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(DNSStatusRequestTCP,58
+SF:,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.
+SF:0\.3\)\n530\x20Please\x20login\x20with\x20USER\x20and\x20PASS\.\n")%r(S
+SF:SLSessionReq,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20
+SF:\(vsFTPd\x203\.0\.3\)\n")%r(TerminalServerCookie,33,"220\x20Welcome\x20
+SF:to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n")%r(TLSSess
+SF:ionReq,33,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFT
+SF:Pd\x203\.0\.3\)\n")%r(Kerberos,33,"220\x20Welcome\x20to\x20Anonymous\x2
+SF:0FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n")%r(SMBProgNeg,33,"220\x20Wel
+SF:come\x20to\x20Anonymous\x20FTP\x20server\x20\(vsFTPd\x203\.0\.3\)\n")%r
+SF:(X11Probe,58,"220\x20Welcome\x20to\x20Anonymous\x20FTP\x20server\x20\(v
+SF:sFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20with\x20USER\x20and\x20PA
+SF:SS\.\n")%r(FourOhFourRequest,58,"220\x20Welcome\x20to\x20Anonymous\x20F
+SF:TP\x20server\x20\(vsFTPd\x203\.0\.3\)\n530\x20Please\x20login\x20with\x
+SF:20USER\x20and\x20PASS\.\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 18 15:46:54 2022 -- 1 IP address (1 host up) scanned in 177.81 seconds

@@ -1,0 +1,3 @@
+input: BasicStringObfuscation-obf.jar
+detect: true
+output: aplha.jar

@@ -1,0 +1,130 @@
+Classfile /home/void/tryhackme/JVM_Reverse_Engineering/Basic_String_Obfuscation/BasicStringObfuscation.class
+  Last modified 23-Feb-2022; size 999 bytes
+  MD5 checksum 3cd6388fd95b63f932dd776741d3f032
+  Compiled from "BasicStringObfuscation.java"
+public class BasicStringObfuscation
+  minor version: 0
+  major version: 52
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // BasicStringObfuscation
+  super_class: #14                        // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #14.#31        // java/lang/Object."<init>":()V
+   #2 = Class              #32            // BasicStringObfuscation
+   #3 = String             #33            // aRa2lPT6A6gIqm4RE
+   #4 = Methodref          #2.#34         // BasicStringObfuscation.xor:(Ljava/lang/String;)Ljava/lang/String;
+   #5 = Methodref          #12.#35        // java/lang/String.equals:(Ljava/lang/Object;)Z
+   #6 = Fieldref           #36.#37        // java/lang/System.out:Ljava/io/PrintStream;
+   #7 = String             #38            // Correct!
+   #8 = Methodref          #39.#40        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #9 = String             #41            // Incorrect
+  #10 = String             #42            // Please provide a password
+  #11 = Methodref          #12.#43        // java/lang/String.toCharArray:()[C
+  #12 = Class              #44            // java/lang/String
+  #13 = Methodref          #12.#45        // java/lang/String."<init>":([C)V
+  #14 = Class              #46            // java/lang/Object
+  #15 = Utf8               correctPassword
+  #16 = Utf8               Ljava/lang/String;
+  #17 = Utf8               ConstantValue
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               main
+  #23 = Utf8               ([Ljava/lang/String;)V
+  #24 = Utf8               StackMapTable
+  #25 = Class              #44            // java/lang/String
+  #26 = Utf8               xor
+  #27 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #28 = Class              #47            // "[C"
+  #29 = Utf8               SourceFile
+  #30 = Utf8               BasicStringObfuscation.java
+  #31 = NameAndType        #18:#19        // "<init>":()V
+  #32 = Utf8               BasicStringObfuscation
+  #33 = Utf8               aRa2lPT6A6gIqm4RE
+  #34 = NameAndType        #26:#27        // xor:(Ljava/lang/String;)Ljava/lang/String;
+  #35 = NameAndType        #48:#49        // equals:(Ljava/lang/Object;)Z
+  #36 = Class              #50            // java/lang/System
+  #37 = NameAndType        #51:#52        // out:Ljava/io/PrintStream;
+  #38 = Utf8               Correct!
+  #39 = Class              #53            // java/io/PrintStream
+  #40 = NameAndType        #54:#55        // println:(Ljava/lang/String;)V
+  #41 = Utf8               Incorrect
+  #42 = Utf8               Please provide a password
+  #43 = NameAndType        #56:#57        // toCharArray:()[C
+  #44 = Utf8               java/lang/String
+  #45 = NameAndType        #18:#58        // "<init>":([C)V
+  #46 = Utf8               java/lang/Object
+  #47 = Utf8               [C
+  #48 = Utf8               equals
+  #49 = Utf8               (Ljava/lang/Object;)Z
+  #50 = Utf8               java/lang/System
+  #51 = Utf8               out
+  #52 = Utf8               Ljava/io/PrintStream;
+  #53 = Utf8               java/io/PrintStream
+  #54 = Utf8               println
+  #55 = Utf8               (Ljava/lang/String;)V
+  #56 = Utf8               toCharArray
+  #57 = Utf8               ()[C
+  #58 = Utf8               ([C)V
+{
+  public BasicStringObfuscation();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: aload_0
+         1: arraylength
+         2: iconst_1
+         3: if_icmplt     42
+         6: aload_0
+         7: iconst_0
+         8: aaload
+         9: astore_1
+        10: ldc           #3                  // String aRa2lPT6A6gIqm4RE
+        12: invokestatic  #4                  // Method xor:(Ljava/lang/String;)Ljava/lang/String;
+        15: aload_1
+        16: invokevirtual #5                  // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        19: ifeq          33
+        22: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: ldc           #7                  // String Correct!
+        27: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: goto          41
+        33: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        36: ldc           #9                  // String Incorrect
+        38: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        41: return
+        42: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        45: ldc           #10                 // String Please provide a password
+        47: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        50: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 6
+        line 8: 10
+        line 9: 22
+        line 11: 33
+        line 13: 41
+        line 15: 42
+        line 16: 50
+      StackMapTable: number_of_entries = 3
+        frame_type = 252 /* append */
+          offset_delta = 33
+          locals = [ class java/lang/String ]
+        frame_type = 7 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 0
+}
+SourceFile: "BasicStringObfuscation.java"

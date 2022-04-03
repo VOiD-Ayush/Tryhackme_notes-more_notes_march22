@@ -1,0 +1,63 @@
+# Nmap 7.92 scan initiated Mon Dec 27 06:31:16 2021 as: nmap -sC -sV -Pn -p 21,22,7321 -vv -oN scans/ports 10.10.136.101
+Nmap scan report for 10.10.136.101
+Host is up, received user-set (0.20s latency).
+Scanned at 2021-12-27 06:31:17 UTC for 170s
+
+PORT     STATE SERVICE REASON  VERSION
+21/tcp   open  ftp     syn-ack vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 ftp      ftp            17 May 15  2020 test.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.253.221
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 04:d5:75:9d:c1:40:51:37:73:4c:42:30:38:b8:d6:df (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeP0io1wWrWYeCtLqYTCxkE3UILotD77FRSxrUy0IZbmUBpYNt+B2NWt1kXPLXldnAGcjyEKIN36lcHXbxPxfPXrGQGfzdKUxE9kRVrLSrkd702cr2AoRp7sjiaJ/bsIKEHwWlNgJJedYdzutT73SUJTnVUS5HsJ9pKERRjI3jdAwJFjslniRIF/xA55myN/0zleZAmQ3PPs7UMqFoU8wxBGj2gLDrkOEszpbsRZu2qhZtGMCpRlxIs5ZKl+JPrF6laG3Em1oh7tPi6Qibf9p6P92iVy7bLa0s0kFdEn/lvp75vUJxUaeoAtKhV482jU6R/Bn1VSSccafgq3wu5QHV
+|   256 7f:95:1a:d7:59:2f:19:06:ea:c1:55:ec:58:35:0c:05 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGXY1pEPDvAMnRbMdsY2+G5K3fMuTAAMXK+ekVlE/cbfv8GOnvTOJmECPgjXOxbknHltv2OCZi7L2NPxUNaTkGQ=
+|   256 a5:15:36:92:1c:aa:59:9b:8a:d8:ea:13:c9:c0:ff:b6 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINsblxrCR5cC4mDOS8S/+KyqlCwu+cGETl6ujJWgevhN
+7321/tcp open  swx?    syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, WMSRequest, X11Probe, afp, giop, ms-sql-s, oracle-tns: 
+|     Username: Password:
+|   NULL: 
+|_    Username:
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port7321-TCP:V=7.92%I=7%D=12/27%Time=61C95DBC%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,A,"Username:\x20")%r(GenericLines,14,"Username:\x20Password:\x20")%
+SF:r(GetRequest,14,"Username:\x20Password:\x20")%r(HTTPOptions,14,"Usernam
+SF:e:\x20Password:\x20")%r(RTSPRequest,14,"Username:\x20Password:\x20")%r(
+SF:RPCCheck,14,"Username:\x20Password:\x20")%r(DNSVersionBindReqTCP,14,"Us
+SF:ername:\x20Password:\x20")%r(DNSStatusRequestTCP,14,"Username:\x20Passw
+SF:ord:\x20")%r(Help,14,"Username:\x20Password:\x20")%r(SSLSessionReq,14,"
+SF:Username:\x20Password:\x20")%r(TerminalServerCookie,14,"Username:\x20Pa
+SF:ssword:\x20")%r(TLSSessionReq,14,"Username:\x20Password:\x20")%r(Kerber
+SF:os,14,"Username:\x20Password:\x20")%r(SMBProgNeg,14,"Username:\x20Passw
+SF:ord:\x20")%r(X11Probe,14,"Username:\x20Password:\x20")%r(FourOhFourRequ
+SF:est,14,"Username:\x20Password:\x20")%r(LPDString,14,"Username:\x20Passw
+SF:ord:\x20")%r(LDAPSearchReq,14,"Username:\x20Password:\x20")%r(LDAPBindR
+SF:eq,14,"Username:\x20Password:\x20")%r(SIPOptions,14,"Username:\x20Passw
+SF:ord:\x20")%r(LANDesk-RC,14,"Username:\x20Password:\x20")%r(TerminalServ
+SF:er,14,"Username:\x20Password:\x20")%r(NCP,14,"Username:\x20Password:\x2
+SF:0")%r(NotesRPC,14,"Username:\x20Password:\x20")%r(JavaRMI,14,"Username:
+SF:\x20Password:\x20")%r(WMSRequest,14,"Username:\x20Password:\x20")%r(ora
+SF:cle-tns,14,"Username:\x20Password:\x20")%r(ms-sql-s,14,"Username:\x20Pa
+SF:ssword:\x20")%r(afp,14,"Username:\x20Password:\x20")%r(giop,14,"Usernam
+SF:e:\x20Password:\x20");
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Dec 27 06:34:07 2021 -- 1 IP address (1 host up) scanned in 171.37 seconds

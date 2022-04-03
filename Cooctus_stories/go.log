@@ -1,0 +1,20 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.48.138:8080/
+[+] Method:                  GET
+[+] Threads:                 80
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,txt,html
+[+] Timeout:                 10s
+===============================================================
+2021/10/26 18:40:25 Starting gobuster in directory enumeration mode
+===============================================================
+/cat                  (Status: 302) [Size: 219] [--> http://10.10.48.138:8080/login]
+/login                (Status: 200) [Size: 556]                                     
+===============================================================
+2021/10/26 18:42:17 Finished
+===============================================================

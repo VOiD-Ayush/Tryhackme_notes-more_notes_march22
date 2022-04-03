@@ -1,0 +1,17 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://cybercrafted.thm/
+[+] Method:       GET
+[+] Threads:      80
+[+] Wordlist:     /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+[+] User Agent:   gobuster/3.1.0
+[+] Timeout:      10s
+===============================================================
+2021/11/20 01:02:50 Starting gobuster in VHOST enumeration mode
+===============================================================
+Found: admin.cybercrafted.thm (Status: 200) [Size: 937]
+Found: www.admin.cybercrafted.thm (Status: 200) [Size: 937]
+Found: www.store.cybercrafted.thm (Status: 403) [Size: 291]
+Found: gc._msdcs.cybercrafted.thm (Status: 400) [Size: 301]

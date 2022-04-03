@@ -1,0 +1,49 @@
+# Nmap 7.92 scan initiated Wed Mar 23 13:39:43 2022 as: nmap -sC -sV -v -oN scans/init 10.10.117.137
+Increasing send delay for 10.10.117.137 from 0 to 5 due to 37 out of 123 dropped probes since last increase.
+Increasing send delay for 10.10.117.137 from 20 to 40 due to 11 out of 14 dropped probes since last increase.
+Nmap scan report for 10.10.117.137
+Host is up (0.22s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 21:ee:30:4f:f8:f7:9f:32:6e:42:95:f2:1a:1a:04:d3 (RSA)
+|   256 dc:fc:de:d6:ec:43:61:00:54:9b:7c:40:1e:8f:52:c4 (ECDSA)
+|_  256 12:81:25:6e:08:64:f6:ef:f5:0c:58:71:18:38:a5:c6 (ED25519)
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: UBUNTU; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 5s, deviation: 0s, median: 4s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| nbstat: NetBIOS name: UBUNTU, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   UBUNTU<00>           Flags: <unique><active>
+|   UBUNTU<03>           Flags: <unique><active>
+|   UBUNTU<20>           Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb2-time: 
+|   date: 2022-03-23T13:40:59
+|_  start_date: N/A
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: cherryblossom
+|   NetBIOS computer name: UBUNTU\x00
+|   Domain name: \x00
+|   FQDN: cherryblossom
+|_  System time: 2022-03-23T13:40:59+00:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 23 13:41:02 2022 -- 1 IP address (1 host up) scanned in 79.59 seconds

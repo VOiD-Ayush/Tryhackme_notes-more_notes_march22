@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Fri Dec 10 15:30:14 2021 as: nmap -sC -sV -vv -A -oN scans/init 10.10.138.242

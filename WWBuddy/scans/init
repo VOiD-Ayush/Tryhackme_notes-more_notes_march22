@@ -1,0 +1,31 @@
+# Nmap 7.92 scan initiated Thu Jan  6 14:25:11 2022 as: nmap -vv -sV -sC -oN scans/init 10.10.194.111
+Increasing send delay for 10.10.194.111 from 0 to 5 due to 21 out of 68 dropped probes since last increase.
+Nmap scan report for 10.10.194.111
+Host is up, received syn-ack (0.21s latency).
+Scanned at 2022-01-06 14:25:12 UTC for 45s
+Not shown: 997 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE REASON      VERSION
+22/tcp    open     ssh     syn-ack     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 66:75:21:b4:93:4a:a5:a7:df:f4:01:80:19:cf:ff:ad (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsJLMZZ++Y5C7rrfjBr3NDcw28OtadaUG9ayV7tpujToTpPyR+SlEUkAFl8tPG/KyENYzXEPSz5B3s4AHCgX1uBw+PfNOV+MyCf2uPMbg0o4vOl4uPgt1clDMV9Xy8n7rznCCukHNvHbS3H7/iJhv8Pw7Sw7Qe148OVDf5P/Sp8t7QlCa3c6+bXirhWz79HGj1kzxqWc+28NG+8EPDAIpBCiV4JOt8c31EGLxL60YZv87jjasb881KcQZNPJjipw0/+vYvNYSUIwCChVAFCYsORhrYET5K6ek/NLHjkOsiGBZF57ra65lees8hTECo2jum/sFmkxp5KEy7hwThmUKV
+|   256 a6:dd:30:3b:e4:96:ba:ab:5f:04:3b:9e:9e:92:b7:c0 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLunpUbpWWEPWQO+prxN7M8mUGVgaINwd63DcUocu8/CyUxxBvFdv/Ldwdc7jfc7WvRi5T3fHl+RGSCwQWezzbY=
+|   256 04:22:f0:d2:b0:34:45:d4:e5:4d:ad:a2:7d:cd:00:41 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFPNLi5HCm6YrjWfTkBrESGLZ4YsB3ACocpDoCrmUVO1
+80/tcp    open     http    syn-ack     Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-title: Login
+|_Requested resource was http://10.10.194.111/login/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+13456/tcp filtered unknown no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  6 14:25:57 2022 -- 1 IP address (1 host up) scanned in 46.38 seconds

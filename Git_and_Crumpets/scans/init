@@ -1,0 +1,22 @@
+# Nmap 7.92 scan initiated Mon Mar 21 15:56:33 2022 as: nmap -sC -sV -v -Pn -oN scans/init 10.10.155.155
+Nmap scan report for 10.10.155.155
+Host is up (0.30s latency).
+Not shown: 970 filtered tcp ports (no-response), 27 filtered tcp ports (host-unreach)
+PORT     STATE  SERVICE    VERSION
+22/tcp   open   ssh        OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 d5:33:1f:04:50:a3:f8:9b:a5:d5:55:10:04:52:83:69 (RSA)
+|   256 4a:89:06:8b:1e:23:03:4a:7c:c4:92:6b:0f:84:3e:f8 (ECDSA)
+|_  256 9e:5c:da:fa:ae:39:d1:bb:7f:3d:84:9d:e9:a8:c9:62 (ED25519)
+80/tcp   open   http       nginx
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-favicon: Unknown favicon MD5: 6A7F7C90FDB7FE26DB324F5BA6859594
+| http-title: Hello, World
+|_Requested resource was http://10.10.155.155/index.html
+9090/tcp closed zeus-admin
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 21 15:57:24 2022 -- 1 IP address (1 host up) scanned in 51.00 seconds

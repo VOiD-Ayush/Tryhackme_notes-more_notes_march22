@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2021.8.2" exportTime="Sat Nov 06 00:57:31 IST 2021">
+  <item>
+    <time>Sat Nov 06 00:56:45 IST 2021</time>
+    <url><![CDATA[http://10.10.13.165/api/creatures/search]]></url>
+    <host ip="10.10.13.165">10.10.13.165</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/api/creatures/search]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[UE9TVCAvYXBpL2NyZWF0dXJlcy9zZWFyY2ggSFRUUC8xLjENCkhvc3Q6IDEwLjEwLjEzLjE2NQ0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFgxMTsgTGludXggeDg2XzY0OyBydjo3OC4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94Lzc4LjANCkFjY2VwdDogYXBwbGljYXRpb24vanNvbiwgdGV4dC9qYXZhc2NyaXB0LCAqLyo7IHE9MC4wMQ0KQWNjZXB0LUxhbmd1YWdlOiBlbi1VUyxlbjtxPTAuNQ0KQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL3gtd3d3LWZvcm0tdXJsZW5jb2RlZDsgY2hhcnNldD1VVEYtOA0KWC1SZXF1ZXN0ZWQtV2l0aDogWE1MSHR0cFJlcXVlc3QNCkNvbnRlbnQtTGVuZ3RoOiAxNA0KT3JpZ2luOiBodHRwOi8vMTAuMTAuMTMuMTY1DQpDb25uZWN0aW9uOiBjbG9zZQ0KUmVmZXJlcjogaHR0cDovLzEwLjEwLjEzLjE2NS9pbmRleC5waHANCkNvb2tpZTogUEhQU0VTU0lEPWtvbWR1a3IwNjlidXUyOTlzNjlsaG9odjBpDQoNCm5hbWVDcmVhdHVyZT0xMjM=]]></request>
+    <status></status>
+    <responselength></responselength>
+    <mimetype></mimetype>
+    <response base64="true"></response>
+    <comment></comment>
+  </item>
+</items>

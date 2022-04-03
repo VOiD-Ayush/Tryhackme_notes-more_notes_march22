@@ -1,0 +1,25 @@
+# Nmap 7.92 scan initiated Sat Nov 20 00:41:55 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.62.254
+Nmap scan report for cybercrafted.thm (10.10.62.254)
+Host is up, received syn-ack (0.22s latency).
+Scanned at 2021-11-20 00:41:56 IST for 66s
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 37:36:ce:b9:ac:72:8a:d7:a6:b7:8e:45:d0:ce:3c:00 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDk3jETo4Cogly65TvK7OYID0jjr/NbNWJd1TvT3mpDonj9KkxJ1oZ5xSBy+3hOHwDcS0FG7ZpFe8BNwe/ASjD91/TL/a1gH6OPjkZblyc8FM5pROz0Mn1JzzB/oI+rHIaltq8JwTxJMjTt1qjfjf3yqHcEA5zLLrUr+a47vkvhYzbDnrWEMPXJ5w9V2EUxY9LUu0N8eZqjnzr1ppdm3wmC4li/hkKuzkqEsdE4ENGKz322l2xyPNEoaHhEDmC94LTp1FcR4ceeGQ56WzmZe6CxkKA3iPz55xSd5Zk0XTZLTarYTMqxxe+2cRAgqnCtE1QsE7cX4NA/E90EcmBnJh5T
+|   256 e9:e7:33:8a:77:28:2c:d4:8c:6d:8a:2c:e7:88:95:30 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLntlbdcO4xygQVgz6dRRx15qwlCojOYACYTiwta7NFXs9M2d2bURHdM1dZJBPh5pS0V69u0snOij/nApGU5AZo=
+|   256 76:a2:b1:cf:1b:3d:ce:6c:60:f5:63:24:3e:ef:70:d8 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDbLLQOGt+qbIb4myX/Z/sYQ7cj20+ssISzpZCaMD4/u
+80/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Cybercrafted
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-favicon: Unknown favicon MD5: 4E1E2DCB46BCB45E53566634707765D9
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 20 00:43:02 2021 -- 1 IP address (1 host up) scanned in 67.29 seconds

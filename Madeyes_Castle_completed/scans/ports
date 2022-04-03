@@ -1,0 +1,67 @@
+# Nmap 7.92 scan initiated Thu Nov 25 22:05:15 2021 as: nmap -sC -sV -vv -p 22,80,139,445 -oN scans/ports 10.10.62.234
+Nmap scan report for hogwartz-castle.thm (10.10.62.234)
+Host is up, received syn-ack (0.25s latency).
+Scanned at 2021-11-25 22:05:16 IST for 53s
+
+PORT    STATE SERVICE     REASON  VERSION
+22/tcp  open  ssh         syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 7f:5f:48:fa:3d:3e:e6:9c:23:94:33:d1:8d:22:b4:7a (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSmqaAdIPmWjN3e6ubgLXXBGVvX9bKtcNHYD2epO9Fwy4brQNYRBkUxrRp4SJIX26MGxGyE8C5HKzhKdlXCeQS+QF36URayv/joz6UOTFTW3oxsMF6tDYMQy3Zcgh5Xp5yVoNGP84pegTQjXUUxhYSEhb3aCIci8JzPt9JntGuO0d0BQAqEo94K3RCx4/V7AWO1qlUeFF/nUZArwtgHcLFYRJEzonM02wGNHXu1vmSuvm4EF/IQE7UYGmNYlNKqYdaE3EYAThEIiiMrPaE4v21xi1JNNjUIhK9YpTA9kJuYk3bnzpO+u6BLTP2bPCMO4C8742UEc4srW7RmZ3qmoGt
+|   256 53:75:a7:4a:a8:aa:46:66:6a:12:8c:cd:c2:6f:39:aa (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCDhpuUC3UgAeCvRo0UuEgWfXhisGXTVUnFooDdZzvGRS393O/N6Ywk715TOIAbk+o1oC1rba5Cg7DM4hyNtejk=
+|   256 7f:c2:2f:3d:64:d9:0a:50:74:60:36:03:98:00:75:98 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGnNa6K0GzjKiPdClth/sy8rhOd8KtkuagrRkr4tiATl
+80/tcp  open  http        syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+139/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: HOGWARTZ-CASTLE; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 38859/tcp): CLEAN (Timeout)
+|   Check 2 (port 37541/tcp): CLEAN (Timeout)
+|   Check 3 (port 20888/udp): CLEAN (Timeout)
+|   Check 4 (port 43209/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: mean: 6s, deviation: 1s, median: 5s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| nbstat: NetBIOS name: HOGWARTZ-CASTLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   HOGWARTZ-CASTLE<00>  Flags: <unique><active>
+|   HOGWARTZ-CASTLE<03>  Flags: <unique><active>
+|   HOGWARTZ-CASTLE<20>  Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb2-time: 
+|   date: 2021-11-25T16:35:36
+|_  start_date: N/A
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: hogwartz-castle
+|   NetBIOS computer name: HOGWARTZ-CASTLE\x00
+|   Domain name: \x00
+|   FQDN: hogwartz-castle
+|_  System time: 2021-11-25T16:35:36+00:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 25 22:06:09 2021 -- 1 IP address (1 host up) scanned in 54.50 seconds

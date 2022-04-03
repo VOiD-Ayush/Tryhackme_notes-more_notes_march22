@@ -1,0 +1,93 @@
+# Nmap 7.92 scan initiated Thu Feb 24 13:53:00 2022 as: nmap -vvv -p 22,82,81,80,2222,8888,9999 -sC -sV -oN scans/rustscan 10.10.19.5
+Nmap scan report for 10.10.19.5
+Host is up, received conn-refused (1.3s latency).
+Scanned at 2022-02-24 13:53:04 UTC for 132s
+
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 6f:79:91:27:96:56:4a:78:94:b7:fa:d8:9c:7e:cf:af (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDPd537DQlhAi9DE3rCLDp3zLp4csHmvVvUslDC3Aj174ReIwQYNYhQodTEp5vSpKbNrioYS/7/99LWDinNm/FH9MZ3Bk0cf6OHB+1nNbC/IjJLhuOW8oY5Y1MCckwdPm6rXbyPVBtd9buVRIWzyZwmSeX1yXayD4+vknXFwRL7BxXxFqBsGlXMwbe7/JPJJ480FjSRZQ8txG/XcjgUCjCEuY3/Z+tzNX6kKfKUI1/NVgS2+C2OJchFkUbyFlMNPFGEOl4D9EwXSQjxQfpSumhGMfvEOyp/lL655gguYCx4xltE6dv+EPh2m9kZJcvQfdvPLV7NzLR8YoVWTN1a9v6bil0pm4YhAkWJUiIHwFTAUcrrxtYJNQ4OQYNWTnEnEJpz3YIx0fNhejS5WRiS4JLDJSKQG01JDg6M1cxgxvUh7vVnD0ggUOg7iQJu3iLwGyYV4zv+DrdXpSNsCQRlkf654PRID/KiFkz/cEuPI5kifNcYsCPpnPtUjbln1e7JrO0=
+|   256 70:49:42:ad:a8:a9:62:06:b2:68:0f:0d:e8:53:a5:d8 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBKQxpxQZww2t+FdMB5aLTP/NpSAyqmMQDQCRzkakYHZDCCeCHn4L3lrC2nzH8U5+nmKoXd26QkSzIUciyObHzY=
+|   256 a1:00:d6:e5:5b:af:f4:47:69:7d:2c:b3:d1:a6:4e:74 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPWa7uHjU5/vHajX43NYkgvldOvzHw/9l9yvm5QqoldF
+80/tcp   open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+| http-title: Server Manager Login
+|_Requested resource was /login
+| http-methods: 
+|_  Supported Methods: GET POST
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+81/tcp   open  http    syn-ack nginx 1.18.0 (Ubuntu)
+|_http-title: Home Page
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+82/tcp   open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: I Love Hills - Home
+| http-methods: 
+|_  Supported Methods: GET
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+2222/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 4f:93:9a:3f:4b:cc:77:91:e3:c4:e2:67:93:fb:98:79 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCrgbNFDTXnsfo/EgAXFHE/uVsYYvVJCW5aTdFejzMW0WtyQ2InTK72IhX0GWXn8Va84HcX4OaR7lLr7Nw9AC1ajZE9H0I3MjZDpp+U27CnPRgxfMePs5bDHEO5UBjIdGtdsHiiRbxyGPEg4N0UClad9VQBPVwARBdTT4EebLx5f9u+dgr5YQNi43tZYyo7PwFmvgl8u0e1Ad89iCwgvi6ymC1Y2rO3PTiHfAbH9egCM3AiaHt/8QbBnS6/pstFdQKzoJce3FiUjMhTyzvIf1+8GHe8kUW2TMZIuPmYDe2sYKnfcpITfMn4H6kszmNd3Hmq4hZcjQNDzni31mH3REVS1L/TvLy7VXQlXJ5rQcOhjORcpkdhWtg1UTdxl4JFiekL1ZdQiYI2GC2nlpMTPreDVy77ULP4f42mKTC5Bl4XrhNY7TlUSJtj06W9HTf/I5MmO32/TdqAmBE04vyPY12JvxV8cRMle+DVIdVslcKBxKDPGEdMlBu6W8UqMqCXRB8=
+|   256 00:f9:5e:65:86:74:d8:2d:e1:8d:62:f6:7d:be:a7:07 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIfkw7myZvD2XmXo5Xjk8WKdtk7WhDd6ytdJfmobop3E3NoxAM5HcB5z0m8+Gc6jCR/k1FsT7r9V1DUuSsP8SAw=
+|   256 01:a0:a5:3c:2e:5e:02:fe:f5:d2:8a:dd:4c:44:1a:2b (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPAFvsTY9DDOQfDHXH5SuOvmF0PnGUgaOJvv9eH4JUGz
+8888/tcp open  http    syn-ack Werkzeug httpd 0.16.0 (Python 3.8.5)
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: Werkzeug/0.16.0 Python/3.8.5
+9999/tcp open  abyss?  syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Thu, 24 Feb 2022 13:53:22 GMT
+|     Content-Length: 0
+|   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Date: Thu, 24 Feb 2022 13:53:21 GMT
+|_    Content-Length: 0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.92%I=7%D=2/24%Time=62178DCA%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,4B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Thu,\x2024\x20Feb\x2020
+SF:22\x2013:53:21\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,4
+SF:B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Thu,\x2024\x20Feb\x202022\x2013:5
+SF:3:21\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,4B,"H
+SF:TTP/1\.0\x20200\x20OK\r\nDate:\x20Thu,\x2024\x20Feb\x202022\x2013:53:22
+SF:\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(GenericLines,67,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf
+SF:-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPRequest
+SF:,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;
+SF:\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request"
+SF:)%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20
+SF:Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCon
+SF:tent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\
+SF:r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x20400\
+SF:x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nC
+SF:onnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20c
+SF:harset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(K
+SF:erberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text
+SF:/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20R
+SF:equest")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-
+SF:Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n40
+SF:0\x20Bad\x20Request")%r(LDAPSearchReq,67,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x
+SF:20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\
+SF:nConnection:\x20close\r\n\r\n400\x20Bad\x20Request");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 24 13:55:16 2022 -- 1 IP address (1 host up) scanned in 136.10 seconds

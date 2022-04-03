@@ -1,0 +1,23 @@
+# Nmap 7.92 scan initiated Thu Nov 18 13:26:41 2021 as: nmap -sC -sV -vv -p 80,22 -oN scans/ports 10.10.9.30
+Nmap scan report for 10.10.9.30
+Host is up, received syn-ack (0.31s latency).
+Scanned at 2021-11-18 13:26:42 IST for 27s
+
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 30:0f:38:8d:3b:be:67:f3:e0:ca:eb:1c:93:ad:15:86 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDmic6XezAzYEOi8jWokLDH+7zn6LyOEn/8jPWyhJ6yZ6TVq33kzY5NiYwaxYEpj0ohIm2njEHj/4I1a+C7JjRAqwLsVpE/LnHWmvHKCWxqIX+WXJIi8oddWig/xJNlbWLlWBSv/YzIan+x1Ov+/oCGupgy86GyLyKULGUONATY72Ff9VuTQTaZvFgjJDGsdh4obY0ZN4r2PzbzCP6vPtwESx/IYm2fCZwsoev/ml8HSKdTSRacavnzxShr6PuYBOSJmVBbc9sI4rET/7I6bkS8gqAsCPx3DJ0IS+JlVMvXhp3ze5fgAlGf01Xr2lpPxb5uKHVZxu9htJUHv0wRUwASkx2YlTOSWvrGsGWblcKYvh0YmPu37XuRVTEe62ph6c2LPAfBO8WU4/vOo0aanue6W0b9joomDDbAltWBazLj8r87hQnELu4tSjS7MiV2H6q9Ak05ZniG1RYGANC+3IP0kWvehVd1I4FHkIdfQk5Rxv+lqHGi+hRpnzIh0kzk0bc=
+|   256 46:09:66:2b:1f:d1:b9:3c:d7:e1:73:0f:2f:33:4f:74 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOCGDIUZtk9Q/FYmvIUjhKFAO7dMgZgAMgwUoXR+yGb4B/fovHWBLq5Du9i8kyd8FmiY8efx2V8VE8STgcmNQi8=
+|   256 a8:43:0e:d2:c1:a9:d1:14:e0:95:31:a1:62:94:ed:44 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG/RIq26NuKMoJYyJgIRuwjFFrk7kgMqQEcRVMTOlftl
+80/tcp open  http    syn-ack Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-favicon: Unknown favicon MD5: C1359D2DB192C32E31BDE9E7BDE0243B
+|_http-title: Dog Gallery!
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 18 13:27:09 2021 -- 1 IP address (1 host up) scanned in 28.14 seconds

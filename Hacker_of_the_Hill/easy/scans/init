@@ -1,0 +1,88 @@
+# Nmap 7.92 scan initiated Wed Dec 29 16:57:34 2021 as: nmap -sC -sV -vv -oN scans/init 10.10.118.89
+Increasing send delay for 10.10.118.89 from 0 to 5 due to 28 out of 91 dropped probes since last increase.
+Increasing send delay for 10.10.118.89 from 5 to 10 due to 11 out of 27 dropped probes since last increase.
+Increasing send delay for 10.10.118.89 from 10 to 20 due to 11 out of 13 dropped probes since last increase.
+Nmap scan report for 10.10.118.89
+Host is up, received syn-ack (0.23s latency).
+Scanned at 2021-12-29 16:57:35 UTC for 159s
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f7:75:95:c7:6d:f4:92:a0:0e:1e:60:b8:be:4d:92:b1 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7FOhvQRnCoPOd/4kYKsFt1Z81Zn7/eHHCcC1aHXfWK3UskQJaeWDqPcjeXN+ceZbiyKXUBpvAIWlg5Gphn1iCJoWxsCibNzZlZczJmjM2L+fW/maaKRmiFL1fxxgkzNpssK3cF2dyNZ4uitwFhl5imMScEx/E1Lt86545ZxijjmlhUcbxvERh5nC+84RoIRr979qKWvOHgFyLXwOi+FGj5x1DZ0ZcmhsUORX8n9ZsqqUNM01R2MittszQr1CEa0QFvrRyJawV1vHerdaYKaFbwvfR2Ip9d8VI4MmhMqb9fnnwRSYGP3qDKoscJo6UF4wtIMT79/obcXP1GdvoROc7
+|   256 a2:11:fb:e8:c5:c6:f8:98:b3:f8:d3:e3:91:56:b2:34 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCSG/mKt+u+M1pEEuYBYY/LTbDOftPdV5ZBYGyVS0aF5DiRbsYQaOtswUarmEbUO05LIlSUZG6dK88BSm2DjnAU=
+|   256 72:19:b7:04:4c:df:18:be:6b:0f:9d:da:d5:14:68:c5 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF3y6QxJnjq+vtxnKq2LJB1EIy+RSy5rZqltZulxj6RA
+80/tcp   open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+8000/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: VeryBasicCMS - Home
+| http-robots.txt: 1 disallowed entry 
+|_/vbcms
+| http-methods: 
+|_  Supported Methods: POST
+8001/tcp open  http    syn-ack Apache httpd 2.4.29
+| http-title: My Website
+|_Requested resource was /?page=home.php
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+8002/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Learn PHP
+| http-methods: 
+|_  Supported Methods: GET POST
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+9999/tcp open  abyss?  syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Date: Wed, 29 Dec 2021 16:58:29 GMT
+|     Content-Length: 0
+|   GenericLines, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Date: Wed, 29 Dec 2021 16:58:28 GMT
+|_    Content-Length: 0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port9999-TCP:V=7.92%I=7%D=12/29%Time=61CC93AE%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,4B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2029\x20Dec\x202
+SF:021\x2016:58:28\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,
+SF:4B,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2029\x20Dec\x202021\x2016:
+SF:58:29\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,4B,"
+SF:HTTP/1\.0\x20200\x20OK\r\nDate:\x20Wed,\x2029\x20Dec\x202021\x2016:58:2
+SF:9\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(GenericLines,67,"HTTP/1\.1
+SF:\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=ut
+SF:f-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(RTSPReques
+SF:t,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request
+SF:")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:ntent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n
+SF:\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n
+SF:Connection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20
+SF:charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(
+SF:Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20
+SF:Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request")%r(LDAPSearchReq,67,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\
+SF:x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x204
+SF:00\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r
+SF:\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request");
+Service Info: Host: 127.0.1.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 29 17:00:15 2021 -- 1 IP address (1 host up) scanned in 160.93 seconds

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2021.8.2" exportTime="Thu Nov 25 21:54:43 IST 2021">
+  <item>
+    <time>Thu Jan 01 05:30:00 IST 1970</time>
+    <url><![CDATA[http://hogwartz-castle.thm/login]]></url>
+    <host ip="10.10.62.234">hogwartz-castle.thm</host>
+    <port>80</port>
+    <protocol>http</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/login]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[UE9TVCAvbG9naW4gSFRUUC8xLjENCkhvc3Q6IGhvZ3dhcnR6LWNhc3RsZS50aG0NClVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NDsgcnY6NzguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC83OC4wDQpBY2NlcHQ6IHRleHQvaHRtbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsYXBwbGljYXRpb24veG1sO3E9MC45LGltYWdlL3dlYnAsKi8qO3E9MC44DQpBY2NlcHQtTGFuZ3VhZ2U6IGVuLVVTLGVuO3E9MC41DQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsIGRlZmxhdGUNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkDQpDb250ZW50LUxlbmd0aDogMTkNCk9yaWdpbjogaHR0cDovL2hvZ3dhcnR6LWNhc3RsZS50aG0NCkNvbm5lY3Rpb246IGNsb3NlDQpSZWZlcmVyOiBodHRwOi8vaG9nd2FydHotY2FzdGxlLnRobS8NClVwZ3JhZGUtSW5zZWN1cmUtUmVxdWVzdHM6IDENCg0KdXNlcj1hYSZwYXNzd29yZD1hYQ==]]></request>
+    <status>200</status>
+    <responselength>814</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMjAwIE9LDQpEYXRlOiBUaHUsIDI1IE5vdiAyMDIxIDE2OjI0OjQxIEdNVA0KU2VydmVyOiBBcGFjaGUvMi40LjI5IChVYnVudHUpDQpWYXJ5OiBBY2NlcHQtRW5jb2RpbmcNCkNvbm5lY3Rpb246IGNsb3NlDQpDb250ZW50LVR5cGU6IHRleHQvaHRtbDsgY2hhcnNldD11dGYtOA0KQ29udGVudC1MZW5ndGg6IDYyMw0KDQo8aHRtbD4KPGhlYWQ+Cgk8c3R5bGU+Cglib2R5IHsKICAgIAliYWNrZ3JvdW5kLWltYWdlOiB1cmwoImh0dHBzOi8vbG92ZWxhY2UtbWVkaWEuaW1naXgubmV0L3VwbG9hZHMvNTIwLzk3YTE2M2UwLTZkMWItMDEzMi0xODMzLTBhN2RmZDkwMmI3Yy5qcGciKSA7Cgljb2xvcjogd2hpdGU7Cgl0ZXh0LWFsaWduOiBjZW50ZXI7Cgl9Cgk8L3N0eWxlPgoJCjwvaGVhZD4JCgkKCTxib2R5PgoJCTxoMT5XZWxjb21lIHRvIEhvZ3dhcnR6PC9oMT4KCQkKCQkgPGgzIHN0eWxlPSdjb2xvcjpyZWQnPiBJbmNvcnJlY3QgVXNlcm5hbWUgb3IgUGFzc3dvcmQgPC9oMz4gCgkJCTxmb3JtIGFjdGlvbj0iL2xvZ2luIiBtZXRob2QgPSAicG9zdCIgaWQ9ImxvZ2luZm9ybSI+CgkJCQk8aDM+VXNlcm5hbWU6PC9oMz48YnI+CiAJCQkJPGlucHV0IHR5cGU9InRleHQiIG5hbWU9InVzZXIiPjxicj4KCQkJCTxoMz5QYXNzd29yZDo8L2gzPjxicj4KCQkJCTxpbnB1dCB0eXBlPSJwYXNzd29yZCIgbmFtZT0icGFzc3dvcmQiPgoJCQk8L2Zvcm0+CQoJCQk8YnV0dG9uIHR5cGU9InN1Ym1pdCIgZm9ybT0ibG9naW5mb3JtIiB2YWx1ZT0ic3VibWl0Ij5TdWJtaXQ8L2J1dHRvbj48YnI+CgkJCgk8L2JvZHk+CgoKPC9odG1sPg==]]></response>
+    <comment></comment>
+  </item>
+</items>

@@ -1,0 +1,36 @@
+# Nmap 7.92 scan initiated Sat Nov 27 17:43:55 2021 as: nmap -sC -sV -vv -p 22,80,139,445,3306 -oN scans/ports 10.10.144.34
+Nmap scan report for 10.10.144.34
+Host is up, received syn-ack (0.25s latency).
+Scanned at 2021-11-27 17:43:56 IST for 26s
+
+PORT     STATE  SERVICE      REASON       VERSION
+22/tcp   open   ssh          syn-ack      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 2c:54:c1:d0:05:91:e1:c0:98:e1:41:f2:b3:21:d9:6b (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7UGK3KyNOQ1TDA2EQYUT6wdJ7QzuM99qRfKwCCJHIaraCfqbFSHDrcDMFIe5YM8JklDpe1TxdxxT80Qwg2Lti4MPGxkrcI26lMqTyxRcFv0oRRbneC4k/GY1OulW3QSZClVn7wXKPwoqEJb+ZvAaKSGkG+/z1ugyXXjSqvzmghjC9bJIiBtqgsPtOPXFyNBpS2tpEIqPetDBlO3ezk8cEBnB40E2F1VE/rL9SJ0xwRUH/aDIBK4KEGPt+2ZHW2k7kWIvmIdWvRwiOkjnvefYvuPViWVDd78PDnQuAFa8UScHoysjZwSAhjl6W8Ldeb1WPchG+xHGxj0zWtOeNrX8b
+|   256 1e:ba:57:5f:29:8c:e4:7a:b4:e5:ac:ed:65:5d:8e:32 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJSdpYWGuEDYvAV0uoP5DS6woDJx2+lYrr3Q6STVkwuJ8kIO8ZWCzwEaMH1JLy8e0/dhmAxrCb2olIiU96CsIKk=
+|   256 7b:55:2f:23:68:08:1a:eb:90:72:43:66:e1:44:a1:9d (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILpwOiOl3GVYWxckTLOQRhwT3TLBgj7LuBeBE4FMjPAM
+80/tcp   open   http         syn-ack      Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Linux-Bay
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+139/tcp  closed netbios-ssn  conn-refused
+445/tcp  closed microsoft-ds conn-refused
+3306/tcp open   mysql        syn-ack      MySQL 5.5.5-10.1.47-MariaDB-0ubuntu0.18.04.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.1.47-MariaDB-0ubuntu0.18.04.1
+|   Thread ID: 114
+|   Capabilities flags: 63487
+|   Some Capabilities: Support41Auth, FoundRows, Speaks41ProtocolNew, Speaks41ProtocolOld, ConnectWithDatabase, SupportsCompression, DontAllowDatabaseTableColumn, LongPassword, IgnoreSpaceBeforeParenthesis, ODBCClient, SupportsTransactions, InteractiveClient, SupportsLoadDataLocal, LongColumnFlag, IgnoreSigpipes, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: \;Pb{db@XwpMoh=7:_NI
+|_  Auth Plugin Name: mysql_native_password
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov 27 17:44:22 2021 -- 1 IP address (1 host up) scanned in 27.03 seconds

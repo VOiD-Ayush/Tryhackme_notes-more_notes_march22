@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://10.10.64.163/
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2022/02/11 12:58:44 Starting gobuster in directory enumeration mode
+===============================================================
+/index.php            (Status: 301) [Size: 0] [--> https://10.10.64.163/]
+/wp-content           (Status: 301) [Size: 319] [--> https://10.10.64.163/wp-content/]
+/wp-login.php         (Status: 301) [Size: 0] [--> https://10.10.64.163/-/-/-/-/-/-/-/-/-/-/]
+/license.txt          (Status: 200) [Size: 19915]                                            
+/wp-includes          (Status: 301) [Size: 320] [--> https://10.10.64.163/wp-includes/]      
+/readme.html          (Status: 200) [Size: 7278]                                             

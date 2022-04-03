@@ -1,0 +1,34 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.75.116/gallery/
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2022/02/12 13:27:27 Starting gobuster in directory enumeration mode
+===============================================================
+/archives             (Status: 301) [Size: 323] [--> http://10.10.75.116/gallery/archives/]
+/home.php             (Status: 500) [Size: 0]                                              
+/login.php            (Status: 200) [Size: 8021]                                           
+/index.php            (Status: 200) [Size: 16897]                                          
+/user                 (Status: 301) [Size: 319] [--> http://10.10.75.116/gallery/user/]    
+/uploads              (Status: 301) [Size: 322] [--> http://10.10.75.116/gallery/uploads/] 
+/assets               (Status: 301) [Size: 321] [--> http://10.10.75.116/gallery/assets/]  
+/report               (Status: 301) [Size: 321] [--> http://10.10.75.116/gallery/report/]  
+/albums               (Status: 301) [Size: 321] [--> http://10.10.75.116/gallery/albums/]  
+/plugins              (Status: 301) [Size: 322] [--> http://10.10.75.116/gallery/plugins/] 
+/database             (Status: 301) [Size: 323] [--> http://10.10.75.116/gallery/database/]
+/classes              (Status: 301) [Size: 322] [--> http://10.10.75.116/gallery/classes/] 
+/config.php           (Status: 200) [Size: 0]                                              
+/dist                 (Status: 301) [Size: 319] [--> http://10.10.75.116/gallery/dist/]    
+/404.html             (Status: 200) [Size: 198]                                            
+/inc                  (Status: 301) [Size: 318] [--> http://10.10.75.116/gallery/inc/]     
+/build                (Status: 301) [Size: 320] [--> http://10.10.75.116/gallery/build/]   
+/schedules            (Status: 301) [Size: 324] [--> http://10.10.75.116/gallery/schedules/]
+/create_account.php   (Status: 200) [Size: 8]                                               

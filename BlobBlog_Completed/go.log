@@ -1,0 +1,18 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.104.60:8080/
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2022/01/11 13:51:54 Starting gobuster in directory enumeration mode
+===============================================================
+/blog                 (Status: 302) [Size: 219] [--> http://10.10.104.60:8080/login]
+/login                (Status: 200) [Size: 546]                                     
+/review               (Status: 302) [Size: 219] [--> http://10.10.104.60:8080/login]

@@ -1,0 +1,56 @@
+# Nmap 7.92 scan initiated Sat Nov  6 21:52:11 2021 as: nmap -sC -sV -vv -p 80,5000,4444,3306 -oN scans/ports 10.10.47.242
+Nmap scan report for 10.10.47.242
+Host is up, received conn-refused (0.23s latency).
+Scanned at 2021-11-06 21:52:12 IST for 16s
+
+PORT     STATE SERVICE REASON  VERSION
+80/tcp   open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+3306/tcp open  mysql   syn-ack MySQL 5.7.33-0ubuntu0.18.04.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.33-0ubuntu0.18.04.1
+|   Thread ID: 10
+|   Capabilities flags: 65535
+|   Some Capabilities: FoundRows, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, Support41Auth, SupportsLoadDataLocal, SupportsCompression, ConnectWithDatabase, Speaks41ProtocolOld, LongColumnFlag, IgnoreSigpipes, IgnoreSpaceBeforeParenthesis, SupportsTransactions, LongPassword, SwitchToSSLAfterHandshake, InteractiveClient, ODBCClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x15\x1EO8^2@\x05oTq\#XZf\x15B\x16[
+|_  Auth Plugin Name: mysql_native_password
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.33_Auto_Generated_Server_Certificate
+| Issuer: commonName=MySQL_Server_5.7.33_Auto_Generated_CA_Certificate
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-02-11T23:12:30
+| Not valid after:  2031-02-09T23:12:30
+| MD5:   0b70 1b5f 166e 4269 32e3 01be 40f8 f6e7
+| SHA-1: 2866 e1ef d280 9bcf 6cec b15c 27b7 af15 cde1 f92b
+| -----BEGIN CERTIFICATE-----
+| MIIDBzCCAe+gAwIBAgIBAjANBgkqhkiG9w0BAQsFADA8MTowOAYDVQQDDDFNeVNR
+| TF9TZXJ2ZXJfNS43LjMzX0F1dG9fR2VuZXJhdGVkX0NBX0NlcnRpZmljYXRlMB4X
+| DTIxMDIxMTIzMTIzMFoXDTMxMDIwOTIzMTIzMFowQDE+MDwGA1UEAww1TXlTUUxf
+| U2VydmVyXzUuNy4zM19BdXRvX0dlbmVyYXRlZF9TZXJ2ZXJfQ2VydGlmaWNhdGUw
+| ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDRCvq9/K5fEQO0juxe6NG4
+| zjV1A5DR/lgWgraEiLmYANxmlN4MY6dy79NnaeCI8fRSjergQIJzFbNWc5mfm6NC
+| E3eaLq2X9eN7+KdR2q7VNjJ/fF3D7k4ewa0GnBNGbC2AyoYrFKXxAN6qGU831qU4
+| aMNcNCAXcJqqF4rW+3Vjlj8h2/ZkYkRJsVUEz5k6esNYRsVPu7JSFkRLE4lV8Xg9
+| vL9arCA9BgR4sE1FqI7mA9DLUcoEZlJXwgl67oad5sxW+GPuZeUF4jF583C8vBhN
+| WRtHWPytjQLe69N8BTthbdabtyQI2HMBEGSEDF6U2AJj8OiC3AXUs3L9p//hL/1p
+| AgMBAAGjEDAOMAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEBAHPpnm2k
+| 2U9nkklYcE0M2LEWyQE8IJozVMLMZ3KvuTF49+eUGXUeEvoJQnOi6P5ELvc57gGY
+| 5QcAdpmqAbdE6vA1jnvK825LCl/L1zpsqXpkj4gu5Znavl2Rs0wXvhGhlj3PlNQu
+| SKoSi+s729CulT6OU+JV9NDIOQlzoSfHCHo02t0D006dnx1ko1J/CtWqFi6mPF8u
+| jqb87kTDBtMPXEO9OKrWKKjxBBQlVAIgu+VAn3TfeEX5moOZO84Uv7ul6GuJ2Xg3
+| J4tSOB1aj0YJcgRXPbYXXf8AgOnMMXv18ZW1x49P5Yro58JyjioZiY7d9bHArRy5
+| nuBjGrsuWRNAqBM=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+4444/tcp open  krb524? syn-ack
+5000/tcp open  upnp?   syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Nov  6 21:52:28 2021 -- 1 IP address (1 host up) scanned in 17.20 seconds

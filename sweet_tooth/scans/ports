@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Sat Mar 19 15:43:48 2022 as: nmap -sC -sV -v -p 53100 -oN scans/ports 10.10.191.74
+Nmap scan report for 10.10.191.74
+Host is up (0.20s latency).
+
+PORT      STATE SERVICE VERSION
+53100/tcp open  status  1 (RPC #100024)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 19 15:44:05 2022 -- 1 IP address (1 host up) scanned in 16.52 seconds

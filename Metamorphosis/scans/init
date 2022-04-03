@@ -1,0 +1,67 @@
+# Nmap 7.92 scan initiated Sun Nov 28 16:58:48 2021 as: nmap -sC -sV -vv -A -oN scans/init 10.10.208.244
+Nmap scan report for 10.10.208.244
+Host is up, received syn-ack (0.30s latency).
+Scanned at 2021-11-28 16:58:50 UTC for 83s
+Not shown: 995 closed tcp ports (conn-refused)
+PORT    STATE SERVICE     REASON  VERSION
+22/tcp  open  ssh         syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f7:0f:0a:18:50:78:07:10:f2:32:d1:60:30:40:d4:be (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjT/lRIkM7TFdpO6bwrOH8B0fB1kVslwfc/jdO+WtRiic1J8hDXzLatrXeBpzFqWveVmMI84dUhmidyBTk+jIksonSxB6IrLxCw+clRTQOUGXYw6iu3DiVZ6Xr/BlnxscgGuFMEvYd7E2ADyyVY/HDvpPMIv7SrDxfd+UNXf9yELZbsgY9CEqBuqT/3Ka4lt6ecslpcfMbkhZdiTgYnZ9EMrcmJlKcEXMq/tliZt5VuV7nxOEqKi1LfmgeIcl48Mok1sPCro+QsVfR5BvJPilLIfC35HoaBF1tyIdbzvZLfj/iCB/EhhtMqLZoPB2l/fg7RQ9soXK1rYgRbM0x7sv7
+|   256 5c:00:37:df:b2:ba:4c:f2:3c:46:6e:a3:e9:44:90:37 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGW8YbCvrlt/1rWQ4pObroj9o9vLbiGbYb/xxAjX/HoTxGUGYF/lYBCbZtmv8Fnkfs5Lg6K5MIHjjd/jpzNDQOg=
+|   256 fe:bf:53:f1:d0:5a:7c:30:db:ac:c8:3c:79:64:47:c8 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKxJeDTFMHsXaGHyZ8lSFpxm8VpawK1rvSDY0lbifD8e
+80/tcp  open  http        syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+139/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn syn-ack Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+873/tcp open  rsync       syn-ack (protocol version 31)
+Service Info: Host: INCOGNITO; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 46s, deviation: 0s, median: 45s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 60132/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 19855/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 58080/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 58728/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| nbstat: NetBIOS name: INCOGNITO, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   INCOGNITO<00>        Flags: <unique><active>
+|   INCOGNITO<03>        Flags: <unique><active>
+|   INCOGNITO<20>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb2-time: 
+|   date: 2021-11-28T17:00:44
+|_  start_date: N/A
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: incognito
+|   NetBIOS computer name: INCOGNITO\x00
+|   Domain name: \x00
+|   FQDN: incognito
+|_  System time: 2021-11-28T17:00:44+00:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 28 17:00:13 2021 -- 1 IP address (1 host up) scanned in 84.84 seconds

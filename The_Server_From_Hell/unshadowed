@@ -1,0 +1,34 @@
+root:$6$gOnbjpUs$c0IEFcbrGocU26kyzzPOqzY02e7bcawNexPsEm3oENaBIw7mVz/h9dOgaDaphveFY9ScIetMiI8F/XOnTxJxi1:0:0:root:/root:/bin/bash
+daemon:*:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:*:2:2:bin:/bin:/usr/sbin/nologin
+sys:*:3:3:sys:/dev:/usr/sbin/nologin
+sync:*:4:65534:sync:/bin:/bin/sync
+games:*:5:60:games:/usr/games:/usr/sbin/nologin
+man:*:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:*:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:*:8:8:mail:/var/mail:/usr/sbin/nologin
+news:*:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:*:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:*:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:*:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:*:34:34:backup:/var/backups:/usr/sbin/nologin
+list:*:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:*:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:*:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:*:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:*:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:*:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:*:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:*:103:107::/nonexistent:/usr/sbin/nologin
+_apt:*:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:*:105:65534::/var/lib/lxd/:/bin/false
+uuidd:*:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:*:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:*:108:112::/var/lib/landscape:/usr/sbin/nologin
+sshd:*:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:*:110:1::/var/cache/pollinate:/bin/false
+vagrant:$6$XQAwkysB$wSkezwLStg6E8nT/h5ECcNdiBuGt98yNnjwVEB.YVEAQY9z5AamgBhYTUAzKRQjmNxpEOLP/a36mxdZyaKJk60:1000:1000:,,,:/home/vagrant:/bin/bash
+ubuntu:!:1001:1001:Ubuntu:/home/ubuntu:/bin/bash
+statd:*:111:65534::/var/lib/nfs:/usr/sbin/nologin
+ntp:*:112:116::/nonexistent:/usr/sbin/nologin
+hades:*:1002:1002:0,0,0,0:/home/hades:/usr/bin/irb

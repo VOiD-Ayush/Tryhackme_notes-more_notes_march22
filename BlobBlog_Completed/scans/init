@@ -1,0 +1,48 @@
+# Nmap 7.92 scan initiated Tue Jan 11 13:46:22 2022 as: nmap -vv -sV -sC -Pn -oN scans/init 10.10.104.60
+Nmap scan report for 10.10.104.60
+Host is up, received user-set (0.27s latency).
+Scanned at 2022-01-11 13:46:23 UTC for 93s
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+21/tcp   open  ftp     syn-ack vsftpd 3.0.2
+22/tcp   open  ssh     syn-ack OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 e7:28:a6:33:66:4e:99:9e:8e:ad:2f:1b:49:ec:3e:e8 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBALXivx0EdFUjWn8Hg9zVrEE0+FIVsz0Dgt27TYzwHsc2NBir/vuOaG2wuM28Yu1yY5yX8QyIT7QvvtGwpZMS9wGy0x+mjSzMVgkkUpMDp2Yholkm9NH/CDhaA8zg3HxGd8/EdnHMLWszgF58xPCjUAtL3tZK09B4w/pdM0FFAF5BAAAAFQDzhIOaKK76v9eKeZNe0ZgkHVdyWQAAAIEAirSNjm02GVhgTbV6I60sZmY9nWORouyVp+Y+K0MQF+Jvxr0QQEWFeIVNbYNW0eg06VJ0JLexGNttrT/N6LPU4KBR7zIGOshLhXV847rwkUjODCt0ZeLjUv0X8o6T4ExZi92VLBylxQmk2OMgUIyeVPVbAsDAK2N0LFWHfpLTbl0AAACARqXryFKMWJQTJ1Ta5dX4bCZ20ulsATRbFuMLH1OZoA7gM2A2rijxPvK6Vp/VJt7701LhgI0dUZClMLC8q0OXaTEO3Ao6zdJb8W5snDue2TrPm12UnELgUD/NwWVqyjgYq1UgZ+71l+3fy6Q8opDILH+RYmAypIXb29dXvICjC5U=
+|   2048 86:fc:ed:ce:46:63:4d:fd:ca:74:b6:50:46:ac:33:0f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgOLGhQs3olTn9V7fF/VB8GkElTVbM33EOlppILeLZmIdeg0NkxZdScAjalP4AB/yiU/01Whysy6NhOeuyVfwRhCkvpoWkN1X20YI6fPdTE5TLOeR+m78IXXZlyBSj2GOqvM7tPr0BqvfpsoxkS4zXVYG4OhxZDR4/rmXA9GaSOTzGEOWj839sbW6cdos5nanQSdEhDM441+GeUfXfPh+nqasy422AEhDqFh6cDRcQw5MXR2pt+VicabIfcVjRNRCmNgpx3nbJ/u1TeNC8C40krEiH735AbPd/Bu/Hbg2hY0AR7I/2dwsZMMcQ6weRLY0bOdW8wWPTIgdWN65DVAlf
+|   256 e0:cc:05:0a:1b:8f:5e:a8:83:7d:c3:d2:b3:cf:91:ca (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOdOqWQM/+hxmRNa9Np94ZyfIfPGqNPOMKRMQkwCUXxrEfrC6RxnuNQolldjaSZtTx4nd/qWQqcNvrFbifP942o=
+|   256 80:e3:45:b2:55:e2:11:31:ef:b1:fe:39:a8:90:65:c5 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJCjSR4Gytw2HNoqL4fDTKnxm0d8U/16kopRnicLqWMM
+80/tcp   open  http    syn-ack Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Apache2 Ubuntu Default Page: It works
+445/tcp  open  http    syn-ack Apache httpd 2.4.7 ((Ubuntu))
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+8080/tcp open  http    syn-ack Werkzeug httpd 1.0.1 (Python 3.5.3)
+|_http-server-header: Werkzeug/1.0.1 Python/3.5.3
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 24102/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 59137/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 25506/udp): CLEAN (Timeout)
+|   Check 4 (port 53932/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan 11 13:47:56 2022 -- 1 IP address (1 host up) scanned in 93.57 seconds

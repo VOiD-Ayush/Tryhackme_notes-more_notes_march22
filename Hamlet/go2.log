@@ -1,0 +1,18 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.222.126:8000
+[+] Method:                  GET
+[+] Threads:                 40
+[+] Wordlist:                /usr/share/wordlists/directory_enum/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              txt,html,php
+[+] Timeout:                 10s
+===============================================================
+2022/01/28 06:16:01 Starting gobuster in directory enumeration mode
+===============================================================
+/index.html           (Status: 200) [Size: 106]
+/db                   (Status: 301) [Size: 318] [--> http://10.10.222.126:8000/db/]
+/repository           (Status: 301) [Size: 326] [--> http://10.10.222.126:8000/repository/]

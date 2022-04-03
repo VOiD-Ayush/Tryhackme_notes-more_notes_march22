@@ -1,0 +1,31 @@
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/sys-internal
+dbus-update-activation-environment: setting USER=sys-internal
+dbus-update-activation-environment: setting DESKTOP_SESSION=Lubuntu
+dbus-update-activation-environment: setting PWD=/home/sys-internal
+dbus-update-activation-environment: setting HOME=/home/sys-internal
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=Lubuntu
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting SHLVL=1
+dbus-update-activation-environment: setting LANGUAGE=en_US
+dbus-update-activation-environment: setting GDMSESSION=Lubuntu
+dbus-update-activation-environment: setting LOGNAME=sys-internal
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-VzDRxlLDv8,guid=096a8904171f04438926e059601e905d
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting XAUTHORITY=/home/sys-internal/.Xauthority
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-Lubuntu:/etc/xdg
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+dbus-update-activation-environment: warning: error sending to systemd: org.freedesktop.DBus.Error.Spawn.ChildExited: Process org.freedesktop.systemd1 exited with status 1
+** Message: 13:49:35.026: main.vala:102: Session is Lubuntu
+** Message: 13:49:35.026: main.vala:103: DE is LXDE
+** Message: 13:49:35.257: main.vala:134: log directory: /home/sys-internal/.cache/lxsession/Lubuntu
+** Message: 13:49:35.257: main.vala:135: log path: /home/sys-internal/.cache/lxsession/Lubuntu/run.log

@@ -1,0 +1,209 @@
+** Message: 13:49:35.415: environement.vala:58: Exporting primary_variable
+** Message: 13:49:35.415: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: 13:49:35.415: environement.vala:177: custom_config :/etc/xdg/lubuntu:
+** Message: 13:49:35.415: environement.vala:178: config_dirs :/etc/xdg/xdg-Lubuntu:/etc/xdg
+** Message: 13:49:35.415: environement.vala:179: confir_dirs not null, export : /etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg
+** Message: 13:49:35.415: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: 13:49:35.415: environement.vala:218: custom_data :/etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:
+** Message: 13:49:35.415: environement.vala:219: data_dirs :/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+** Message: 13:49:35.415: environement.vala:220: data_dirs not null, export : /etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+** Message: 13:49:35.415: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: 13:49:35.449: utils.vala:68: User config used : /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.449: utils.vala:89: Final file used : /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “iGtk/ColorScheme” in group “GTK”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “dock/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “im2/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “widget1/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “notification/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “keybindings/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “im_manager/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “message_manager/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “updates_manager/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “updates_manager/timeout” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “crash_manager/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “crash_manager/dev_mode” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “crash_manager/timeout” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “proxy_manager/http” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “a11y/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “xrandr/command” in group “Session”
+** Message: 13:49:35.471: settings.vala:540: Key file does not have key “charmap/command” in group “Session”
+** Message: 13:49:35.472: settings.vala:462: Monitoring: /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.472: settings.vala:466: Desktop file is already in config home, do nothing
+** Message: 13:49:35.472: environement.vala:79: Exporting variable
+** Message: 13:49:35.472: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: 13:49:35.472: environement.vala:177: custom_config :
+** Message: 13:49:35.472: environement.vala:178: config_dirs :/etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg
+** Message: 13:49:35.472: environement.vala:179: confir_dirs not null, export : /etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg
+** Message: 13:49:35.472: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: 13:49:35.472: environement.vala:218: custom_data :
+** Message: 13:49:35.472: environement.vala:219: data_dirs :/etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+** Message: 13:49:35.472: environement.vala:220: data_dirs not null, export : /etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+** Message: 13:49:35.472: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: 13:49:35.472: utils.vala:68: User config used : /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.472: utils.vala:89: Final file used : /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.473: environement.vala:254: No entry in [Environment_variable]. Key file does not have group “Environment_variable”
+** Message: 13:49:35.556: utils.vala:79: Config system location : /etc/xdg/xdg-Lubuntu/lxsession/Lubuntu
+xprop:  no such property "_NET_NUMBER_OF_DESKTOPS"
+xprop:  no such property "_NET_DESKTOP_NAMES"
+** Message: 13:49:35.587: utils.vala:79: Config system location : /etc/xdg/lxsession/Lubuntu
+** Message: 13:49:35.607: utils.vala:85: System system path location : /etc/xdg/lxsession/Lubuntu/conffiles.conf
+** Message: 13:49:35.607: utils.vala:89: Final file used : /etc/xdg/lxsession/Lubuntu/conffiles.conf
+** Message: 13:49:35.630: options.vala:164: Activate xsettings_manager build-in
+** Message: 13:49:35.630: utils.vala:68: User config used : /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.630: utils.vala:89: Final file used : /home/sys-internal/.config/lxsession/Lubuntu/desktop.conf
+** Message: 13:49:35.728: app.vala:76: Launching lxpanel 
+
+** (lxsession:1240): WARNING **: 13:49:35.729: app.vala:86: Failed to execute child process “dhcpcd-gtk” (No such file or directory)
+
+** (lxsession:1240): WARNING **: 13:49:35.729: app.vala:87: Error when launching dhcpcd-gtk
+** Message: 13:49:35.759: app.vala:76: Launching pcmanfm 
+** Message: 13:49:35.760: app.vala:721: polkit separate
+** Message: 13:49:35.760: app.vala:721: polkit separate
+** Message: 13:49:35.825: app.vala:76: Launching lxpolkit 
+** Message: 13:49:35.825: utils.vala:68: User config used : /home/sys-internal/.config/lxsession/Lubuntu/autostart
+** Message: 13:49:35.825: utils.vala:89: Final file used : /home/sys-internal/.config/lxsession/Lubuntu/autostart
+** Message: 13:49:35.825: autostart.vala:42: Autostart path : /home/sys-internal/.config/lxsession/Lubuntu/autostart
+** Message: 13:49:35.879: options.vala:107: Create build-in Clipboard
+** Message: 13:49:35.881: main.vala:442: Check keymap_mode system
+** Message: 13:49:35.881: main.vala:445: Create Option Keymap
+** Message: 13:49:35.885: app.vala:76: Launching /usr/bin/ssh-agent 
+SSH_AUTH_SOCK=/tmp/ssh-afteVvOvsJkD/agent.1354; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=1356; export SSH_AGENT_PID;
+echo Agent pid 1356;
+** Message: 13:49:36.794: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+
+(update-notifier:1362): dbind-WARNING **: 13:49:36.866: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(nm-applet:1382): dbind-WARNING **: 13:49:37.523: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(light-locker:1393): dbind-WARNING **: 13:49:37.842: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+Openbox-Message: Requested key "XF86Terminal" does not exist on the display
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/apps/system-file-manager.png" from file "/usr/share/icons/gnome/48x48/apps/system-file-manager.png"
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/apps/web-browser.png" from file "/usr/share/icons/gnome/48x48/apps/web-browser.png"
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/categories/applications-accessories.png" from file "/usr/share/icons/gnome/48x48/categories/applications-accessories.png"
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/categories/applications-internet.png" from file "/usr/share/icons/gnome/48x48/categories/applications-internet.png"
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/categories/applications-office.png" from file "/usr/share/icons/gnome/48x48/categories/applications-office.png"
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/categories/applications-multimedia.png" from file "/usr/share/icons/gnome/48x48/categories/applications-multimedia.png"
+***** Imlib2 Developer Warning ***** :
+	This program is calling the Imlib call:
+
+	imlib_free_image();
+
+	With the parameter:
+
+	image
+
+	being NULL. Please fix your program.
+ObRender-Message: Cannot load image "/usr/share/icons/gnome/48x48/categories/applications-system.png" from file "/usr/share/icons/gnome/48x48/categories/applications-system.png"
+
+(nm-applet:1382): Gtk-WARNING **: 13:49:39.977: Can't set a parent on widget which has a parent
+** Message: 13:49:40.441: bt: Name org.bluez unowned on DBus
+
+(nm-applet:1382): Gdk-CRITICAL **: 13:49:40.696: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+
+(lxpanel:1349): Gtk-CRITICAL **: 13:49:40.952: IA__gtk_image_get_pixbuf: assertion 'image->storage_type == GTK_IMAGE_PIXBUF || image->storage_type == GTK_IMAGE_EMPTY' failed
+
+(lxpanel:1349): Gtk-CRITICAL **: 13:49:40.958: IA__gtk_image_get_pixbuf: assertion 'image->storage_type == GTK_IMAGE_PIXBUF || image->storage_type == GTK_IMAGE_EMPTY' failed
+
+(lxpanel:1349): libindicator-WARNING **: 13:49:40.969: IndicatorObject class does not have an accessible description.
+/usr/bin/x-www-browser 
+terminal
+
+Launching terminal manager
+
+(pcmanfm:1351): GLib-GIO-CRITICAL **: 13:50:11.936: g_dbus_proxy_new: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+** Message: 13:50:12.008: dbus-lxde-session.vala:796: Start Terminal Manager
+** Message: 13:50:12.059: app.vala:76: Launching x-terminal-emulator 
+
+(x-terminal-emulator:1570): dbind-WARNING **: 13:50:12.233: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+
+(x-terminal-emulator:1570): Vte-WARNING **: 13:50:13.326: (../../src/vtegtk.cc:1906):int vte_terminal_match_add_gregex(VteTerminal*, GRegex*, GRegexMatchFlags): runtime check failed: (g_regex_get_compile_flags(gregex) & G_REGEX_MULTILINE)
+
+(x-terminal-emulator:1570): Vte-WARNING **: 13:50:13.326: (../../src/vtegtk.cc:1906):int vte_terminal_match_add_gregex(VteTerminal*, GRegex*, GRegexMatchFlags): runtime check failed: (g_regex_get_compile_flags(gregex) & G_REGEX_MULTILINE)
+
+(lxpanel:1349): Wnck-WARNING **: 13:50:14.234: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1349): Wnck-WARNING **: 13:50:15.634: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1349): Wnck-WARNING **: 13:50:17.745: Unhandled action type _OB_WM_ACTION_UNDECORATE
+terminal
+
+Launching terminal manager
+** Message: 13:53:42.187: dbus-lxde-session.vala:796: Start Terminal Manager
+** Message: 13:53:42.194: app.vala:76: Launching x-terminal-emulator 
+
+(x-terminal-emulator:1890): dbind-WARNING **: 13:53:42.371: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+** Message: 13:53:42.391: app.vala:130: x-terminal-emulator exit with this type of exit: 0
+
+(x-terminal-emulator:1570): Vte-WARNING **: 13:53:42.435: (../../src/vtegtk.cc:1906):int vte_terminal_match_add_gregex(VteTerminal*, GRegex*, GRegexMatchFlags): runtime check failed: (g_regex_get_compile_flags(gregex) & G_REGEX_MULTILINE)
+
+(x-terminal-emulator:1570): Vte-WARNING **: 13:53:42.435: (../../src/vtegtk.cc:1906):int vte_terminal_match_add_gregex(VteTerminal*, GRegex*, GRegexMatchFlags): runtime check failed: (g_regex_get_compile_flags(gregex) & G_REGEX_MULTILINE)
+
+(lxpanel:1349): Wnck-WARNING **: 13:53:42.522: Unhandled action type _OB_WM_ACTION_UNDECORATE
+/usr/bin/x-www-browser 
+
+(lxpanel:1349): Wnck-WARNING **: 13:56:20.029: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1349): Wnck-WARNING **: 13:56:21.893: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1349): Wnck-WARNING **: 13:56:21.893: Unhandled action type _OB_WM_ACTION_UNDECORATE

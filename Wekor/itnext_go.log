@@ -1,0 +1,38 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://wekor.thm/it-next/
+[+] Method:                  GET
+[+] Threads:                 80
+[+] Wordlist:                /usr/share/wordlists/directory_enum/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2021/11/03 18:21:31 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.txt             (Status: 403) [Size: 274]
+/.htpasswd            (Status: 403) [Size: 274]
+/.hta.html            (Status: 403) [Size: 274]
+/.htpasswd.html       (Status: 403) [Size: 274]
+/.htpasswd.php        (Status: 403) [Size: 274]
+/.hta                 (Status: 403) [Size: 274]
+/.htpasswd.txt        (Status: 403) [Size: 274]
+/.hta.php             (Status: 403) [Size: 274]
+/.htaccess.txt        (Status: 403) [Size: 274]
+/.htaccess            (Status: 403) [Size: 274]
+/.htaccess.html       (Status: 403) [Size: 274]
+/.htaccess.php        (Status: 403) [Size: 274]
+/contact.php          (Status: 500) [Size: 0]  
+/config.php           (Status: 200) [Size: 0]  
+/css                  (Status: 301) [Size: 312] [--> http://wekor.thm/it-next/css/]
+/fonts                (Status: 301) [Size: 314] [--> http://wekor.thm/it-next/fonts/]
+/images               (Status: 301) [Size: 315] [--> http://wekor.thm/it-next/images/]
+/index.php            (Status: 200) [Size: 66938]                                     
+/index.php            (Status: 200) [Size: 66938]                                     
+/js                   (Status: 301) [Size: 311] [--> http://wekor.thm/it-next/js/]    
+===============================================================
+2021/11/03 18:22:32 Finished
+===============================================================

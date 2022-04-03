@@ -1,0 +1,80 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.18
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://localhost/ [::1]
+[32m[+][0m Started: Fri Nov  5 23:31:20 2021
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://localhost/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: http://localhost/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://localhost/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.7 identified (Insecure, released on 2021-03-09).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://localhost/?feed=rss2, <generator>https://wordpress.org/?v=5.7</generator>
+ |  - http://localhost/?feed=comments-rss2, <generator>https://wordpress.org/?v=5.7</generator>
+
+[32m[+][0m WordPress theme in use: twentytwentyone
+ | Location: http://localhost/wp-content/themes/twentytwentyone/
+ | Last Updated: 2021-07-22T00:00:00.000Z
+ | Readme: http://localhost/wp-content/themes/twentytwentyone/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 1.4
+ | Style URL: http://localhost/wp-content/themes/twentytwentyone/style.css?ver=1.2
+ | Style Name: Twenty Twenty-One
+ | Style URI: https://wordpress.org/themes/twentytwentyone/
+ | Description: Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. Wi...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.2 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://localhost/wp-content/themes/twentytwentyone/style.css?ver=1.2, Match: 'Version: 1.2'
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Fri Nov  5 23:34:20 2021
+[32m[+][0m Requests Done: 3053
+[32m[+][0m Cached Requests: 8
+[32m[+][0m Data Sent: 800.074 KB
+[32m[+][0m Data Received: 751.325 KB
+[32m[+][0m Memory used: 200.098 MB
+[32m[+][0m Elapsed time: 00:02:59
+
+Scan Aborted: Canceled by User

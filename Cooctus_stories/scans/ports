@@ -1,0 +1,52 @@
+# Nmap 7.91 scan initiated Tue Oct 26 18:29:23 2021 as: nmap -sC -sV -vv -p 22,111,2049,8080,34083,35039,42801,54395 -oN scans/ports 10.10.48.138
+Nmap scan report for 10.10.48.138
+Host is up, received conn-refused (0.21s latency).
+Scanned at 2021-10-26 18:29:24 IST for 18s
+
+PORT      STATE SERVICE  REASON  VERSION
+22/tcp    open  ssh      syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e5:44:62:91:90:08:99:5d:e8:55:4f:69:ca:02:1c:10 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbRN8GvRSpA+ku5hqrPnyaobOvwYc4jddRGBHo91dNlIjNdX4LIRLCLdJkpMlW64MVwHV8QIjTFNxPqLQvOkbIn3yX+MQByFziSNf7h5+/tqrXDwZDMMqFAmZ7yeXoopcRY1cfumkYUHbjRxdrNj8Hpd8ol6xnIo9y+qiZx1HPpY3P9HsRpZ6XBq0bE3J68gBozFQmXa8gIU5aX+l0PHOdctWRo4vXa/oQteObsn9Rx+69WpatoDx1TdP4T3fGa3f1dMFIohCzlTUPJgzyGuRZq6JjaBvItUIGPg+isvkg7+diSLDCIo/U7vixeJNLrnvETMnRlwn0jOKxUFrtIwB7
+|   256 e5:a7:b0:14:52:e1:c9:4e:0d:b8:1a:db:c5:d6:7e:f0 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNz3AD3vWNpd2P1sXPm9tHrr6RQjBiCsXT0U/6euW2oK1RqQvipuiKTlcpNRRsXOxcIpscn+7M3nwW5Cgq0ipiA=
+|   256 02:97:18:d6:cd:32:58:17:50:43:dd:d2:2f:ba:15:53 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAv5Jlh5/zgLa5D73WCXKa44htAWA67kUp4x5pGWgXri
+111/tcp   open  rpcbind  syn-ack 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  3           2049/udp   nfs
+|   100003  3           2049/udp6  nfs
+|   100003  3,4         2049/tcp   nfs
+|   100003  3,4         2049/tcp6  nfs
+|   100005  1,2,3      32919/tcp6  mountd
+|   100005  1,2,3      34083/tcp   mountd
+|   100005  1,2,3      54389/udp6  mountd
+|   100005  1,2,3      60803/udp   mountd
+|   100021  1,3,4      32865/udp6  nlockmgr
+|   100021  1,3,4      35039/tcp   nlockmgr
+|   100021  1,3,4      46681/tcp6  nlockmgr
+|   100021  1,3,4      57158/udp   nlockmgr
+|   100227  3           2049/tcp   nfs_acl
+|   100227  3           2049/tcp6  nfs_acl
+|   100227  3           2049/udp   nfs_acl
+|_  100227  3           2049/udp6  nfs_acl
+2049/tcp  open  nfs_acl  syn-ack 3 (RPC #100227)
+8080/tcp  open  http     syn-ack Werkzeug httpd 0.14.1 (Python 3.6.9)
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: Werkzeug/0.14.1 Python/3.6.9
+|_http-title: CCHQ
+34083/tcp open  mountd   syn-ack 1-3 (RPC #100005)
+35039/tcp open  nlockmgr syn-ack 1-4 (RPC #100021)
+42801/tcp open  mountd   syn-ack 1-3 (RPC #100005)
+54395/tcp open  mountd   syn-ack 1-3 (RPC #100005)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Oct 26 18:29:42 2021 -- 1 IP address (1 host up) scanned in 18.77 seconds

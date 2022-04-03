@@ -1,0 +1,206 @@
+# Nmap 7.91 scan initiated Mon Oct 25 22:33:08 2021 as: nmap -sC -sV -vv -p 22,6443,30180,31111,31112 -oN scans/ports 10.10.147.164
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.0 404 Not Found\r\n(?:[^<]+|<(?!/head>))*?<style>\nbody \{ background-color: #fcfcfc; color: #333333; margin: 0; padding:0; \}\nh1 \{ font-size: 1\.5em; font-weight: normal; background-color: #9999cc; min-height:2em; line-height:2em; border-bottom: 1px inset black; margin: 0; \}\nh1, p \{ padding-left: 10px; \}\ncode\.url \{ background-color: #eeeeee; font-family:monospace; padding:0 2px;\}\n</style>'
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.0 404 Not Found\r\n(?:[^<]+|<(?!/head>))*?<style>\nbody \{ background-color: #ffffff; color: #000000; \}\nh1 \{ font-family: sans-serif; font-size: 150%; background-color: #9999cc; font-weight: bold; color: #000000; margin-top: 0;\}\n</style>'
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.0 404 Not Found\r\n(?:[^<]+|<(?!/head>))*?<style>\nbody \{ background-color: #fcfcfc; color: #333333; margin: 0; padding:0; \}\nh1 \{ font-size: 1\.5em; font-weight: normal; background-color: #9999cc; min-height:2em; line-height:2em; border-bottom: 1px inset black; margin: 0; \}\nh1, p \{ padding-left: 10px; \}\ncode\.url \{ background-color: #eeeeee; font-family:monospace; padding:0 2px;\}\n</style>'
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.0 404 Not Found\r\n(?:[^<]+|<(?!/head>))*?<style>\nbody \{ background-color: #ffffff; color: #000000; \}\nh1 \{ font-family: sans-serif; font-size: 150%; background-color: #9999cc; font-weight: bold; color: #000000; margin-top: 0;\}\n</style>'
+Nmap scan report for 10.10.147.164
+Host is up, received conn-refused (0.21s latency).
+Scanned at 2021-10-25 22:33:09 IST for 124s
+
+PORT      STATE SERVICE           REASON  VERSION
+22/tcp    open  ssh               syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 c9:f7:dd:3d:79:bb:f8:44:0f:bd:87:bd:8b:af:e1:5a (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHvPJdllGsYwbwbvXMP0T/d6NcClFy34rSyAVlCPB5jeR0/7DffGcCbj/+kwkTKw82Eb6HtTLKvQwFQduzGqba74IUgxJ3NmQ4IrnbwYg0Mqf1z0ZWeD3rMQKOJeDKcApnW24P2zjBjZ8iNf449DzQLQoQyhti0MQavrLYMwcELCd3u+83FD0pZZN4q5d5yor9EV++lZ5fpU0+seEWoXY9c0LfA9CX+6jwv2cQFTwqC8R78kkTimczT8tVVds/z0KUwpL7t2lsVMxIJ1SKi7XiroU0zJ+YkttZoio7++1vGtW+27Kv/PGQPI7v+953TPZ06BPC3/nxU7CD9Gtpig/h
+|   256 4c:48:9d:c6:b4:e2:17:99:76:48:20:fe:96:d2:c8:eb (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBKRe1KeqoY2DzrMJa+jbQPKLy+IMjqWDOtBQy+Oohg2R+bm1H1VcJWSTE2HhxW7GsbzBEAtqW+290KhTOOmiSQ=
+|   256 d8:e2:f7:ac:4d:cd:68:66:d7:a9:64:1c:42:4a:8e:30 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKiIJ3rd6/JIuiXUx0sJhq8nY1ZypBueO4uckLvIzpur
+6443/tcp  open  ssl/sun-sr-https? syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Mon, 25 Oct 2021 17:04:06 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Mon, 25 Oct 2021 17:03:29 GMT
+|     Content-Length: 129
+|     {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+|   HTTPOptions: 
+|     HTTP/1.0 401 Unauthorized
+|     Cache-Control: no-cache, private
+|     Content-Type: application/json
+|     Date: Mon, 25 Oct 2021 17:03:30 GMT
+|     Content-Length: 129
+|_    {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"Unauthorized","reason":"Unauthorized","code":401}
+| ssl-cert: Subject: commonName=k3s/organizationName=k3s
+| Subject Alternative Name: DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc.cluster.local, DNS:localhost, IP Address:10.10.147.164, IP Address:10.43.0.1, IP Address:127.0.0.1, IP Address:172.30.18.136, IP Address:192.168.1.244
+| Issuer: commonName=k3s-server-ca@1622498168
+| Public Key type: ec
+| Public Key bits: 256
+| Signature Algorithm: ecdsa-with-SHA256
+| Not valid before: 2021-05-31T21:56:08
+| Not valid after:  2022-10-25T16:55:18
+| MD5:   6445 ae33 3acc 0a12 0088 fc1f e8ce bab1
+| SHA-1: 9e11 6a88 4986 8acc bdcb 4861 cc26 405a a475 928b
+| -----BEGIN CERTIFICATE-----
+| MIIB+TCCAZ+gAwIBAgIIJ5SgpcV/xKAwCgYIKoZIzj0EAwIwIzEhMB8GA1UEAwwY
+| azNzLXNlcnZlci1jYUAxNjIyNDk4MTY4MB4XDTIxMDUzMTIxNTYwOFoXDTIyMTAy
+| NTE2NTUxOFowHDEMMAoGA1UEChMDazNzMQwwCgYDVQQDEwNrM3MwWTATBgcqhkjO
+| PQIBBggqhkjOPQMBBwNCAAQBAUGk5Ox0oLT3rZzPJUCVmQiwoHcg1zdU61yDtWZh
+| 3Xv9/5BRkm/Hub4A1/z45qmNzYAdjAqi11p6s6lZhzfmo4HDMIHAMA4GA1UdDwEB
+| /wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAfBgNVHSMEGDAWgBTmY3iEZ5WD
+| XNcMriUDriCamzSP1zB4BgNVHREEcTBvggprdWJlcm5ldGVzghJrdWJlcm5ldGVz
+| LmRlZmF1bHSCJGt1YmVybmV0ZXMuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2NhbIIJ
+| bG9jYWxob3N0hwQKCpOkhwQKKwABhwR/AAABhwSsHhKIhwTAqAH0MAoGCCqGSM49
+| BAMCA0gAMEUCIAhJUlf6qvLi5EYWx4wjtftjo6cB3F8BEMcj1BAwXOC+AiEA5TnZ
+| SZY2qeaMwOwhlRkv1XtQKEQhIzwFFuXWGBZ53+I=
+|_-----END CERTIFICATE-----
+30180/tcp open  http              syn-ack nginx 1.21.0
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: nginx/1.21.0
+|_http-title: 403 Forbidden
+31111/tcp open  unknown           syn-ack
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=d8147ad92c188ecd; Path=/; HttpOnly
+|     Set-Cookie: _csrf=8ATADflNjKO7Q1-u4SHQB7LZo_s6MTYzNTE4MTQwMjI3NzY2NzE5NA%3D%3D; Path=/; Expires=Tue, 26 Oct 2021 17:03:22 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Mon, 25 Oct 2021 17:03:22 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title>Gitea: Git with a cup of tea</title>
+|     <meta name="theme-color" content="#6cc644">
+|     <meta name="author" content="Gitea - Git with a cup of tea" />
+|     <meta name="description" content="Gitea (Git with a cup of tea) is a painless self-hosted Git service written in Go" />
+|     <meta name="keywords" content="go,git,self-hosted,gitea
+|   HTTPOptions: 
+|     HTTP/1.0 404 Not Found
+|     Content-Type: text/html; charset=UTF-8
+|     Set-Cookie: lang=en-US; Path=/; Max-Age=2147483647
+|     Set-Cookie: i_like_gitea=b6a482f526711785; Path=/; HttpOnly
+|     Set-Cookie: _csrf=yhKibMS73x8pvr3_iR7K1bVgOlc6MTYzNTE4MTQwMjg1MDg0MjA2Nw%3D%3D; Path=/; Expires=Tue, 26 Oct 2021 17:03:22 GMT; HttpOnly
+|     X-Frame-Options: SAMEORIGIN
+|     Date: Mon, 25 Oct 2021 17:03:22 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head data-suburl="">
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <meta http-equiv="x-ua-compatible" content="ie=edge">
+|     <title>Page Not Found - Gitea: Git with a cup of tea</title>
+|     <meta name="theme-color" content="#6cc644">
+|     <meta name="author" content="Gitea - Git with a cup of tea" />
+|     <meta name="description" content="Gitea (Git with a cup of tea) is a painless self-hosted Git service written in Go" />
+|_    <meta name="keywords" content="
+31112/tcp open  ssh               syn-ack OpenSSH 7.5 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 2b:c6:63:84:93:b8:04:ce:1c:f5:ce:c7:0e:ca:eb:28 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDL89blW/fideD2Xo7UKOytdLmzkVLToqJFWPKHQ4UP9ZNXTr7GAqeXvRRB9wmdsv4CpNRnQh3KtHuB7QgfZA//6aHtf5ss8zQydhZW5HS6a3Y2DhRnmOLtDQK5XHA1icP2EMYKIH0rfgPFFm1SRUieqbn62Zu//Cd8TdTfax7u1X3raA1nA7WEa+bnH1U4zO7sC6pZVSh7OoDRR/uD8r1xy2IxwcEIHyLVYdJdjxNhy8ryzkU1fwwLbzhSOsA+9bN/V4pq5/tLvipsX5FpIeF7CwHd+3EWlHl64zTWuCnvr5u/MBN3Q/bM2UGbwxj8Jq8tFRbQXoSfXpTrodKmLBSB
+|   256 93:6b:41:5f:89:14:97:0c:6b:53:ab:ba:af:71:f1:40 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKWQuDYkhFhWAillXUpZDXIg86x6wt2RLODmfT6jSjAW8VQO+B6efJrMV5Z5YkJ57WmqTF2rPDxEBIegPiMHddU=
+|   256 e8:c4:94:7b:72:d7:4c:1c:bd:51:4a:84:81:4b:68:c9 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILJgWYJQirOpfa5TYPCcHU+p2NbHFMTjHFyTyGU9KVng
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port6443-TCP:V=7.91%T=SSL%I=7%D=10/25%Time=6176E35B%P=x86_64-pc-linux-g
+SF:nu%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Typ
+SF:e:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x
+SF:20Bad\x20Request")%r(GetRequest,11A,"HTTP/1\.0\x20401\x20Unauthorized\r
+SF:\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20applicatio
+SF:n/json\r\nDate:\x20Mon,\x2025\x20Oct\x202021\x2017:03:29\x20GMT\r\nCont
+SF:ent-Length:\x20129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\",\"
+SF:metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"rea
+SF:son\":\"Unauthorized\",\"code\":401}\n")%r(HTTPOptions,11A,"HTTP/1\.0\x
+SF:20401\x20Unauthorized\r\nCache-Control:\x20no-cache,\x20private\r\nCont
+SF:ent-Type:\x20application/json\r\nDate:\x20Mon,\x2025\x20Oct\x202021\x20
+SF:17:03:30\x20GMT\r\nContent-Length:\x20129\r\n\r\n{\"kind\":\"Status\",\
+SF:"apiVersion\":\"v1\",\"metadata\":{},\"status\":\"Failure\",\"message\"
+SF::\"Unauthorized\",\"reason\":\"Unauthorized\",\"code\":401}\n")%r(RTSPR
+SF:equest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/
+SF:plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Re
+SF:quest")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\
+SF:x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20B
+SF:ad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\
+SF:r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20clos
+SF:e\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-
+SF:8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionRe
+SF:q,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request
+SF:")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(FourOhFourRequest,11A,"HTTP/1\.0\x20401\x20Unauthorize
+SF:d\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20applica
+SF:tion/json\r\nDate:\x20Mon,\x2025\x20Oct\x202021\x2017:04:06\x20GMT\r\nC
+SF:ontent-Length:\x20129\r\n\r\n{\"kind\":\"Status\",\"apiVersion\":\"v1\"
+SF:,\"metadata\":{},\"status\":\"Failure\",\"message\":\"Unauthorized\",\"
+SF:reason\":\"Unauthorized\",\"code\":401}\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port31111-TCP:V=7.91%I=7%D=10/25%Time=6176E354%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(GetRequest,2699,"HTTP/1\.0\x20200\x20OK\r\nContent-Type
+SF::\x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x20Path=
+SF:/;\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=d8147ad92c188ec
+SF:d;\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=8ATADflNjKO7Q1-u4SHQB
+SF:7LZo_s6MTYzNTE4MTQwMjI3NzY2NzE5NA%3D%3D;\x20Path=/;\x20Expires=Tue,\x20
+SF:26\x20Oct\x202021\x2017:03:22\x20GMT;\x20HttpOnly\r\nX-Frame-Options:\x
+SF:20SAMEORIGIN\r\nDate:\x20Mon,\x2025\x20Oct\x202021\x2017:03:22\x20GMT\r
+SF:\n\r\n<!DOCTYPE\x20html>\n<html>\n<head\x20data-suburl=\"\">\n\t<meta\x
+SF:20charset=\"utf-8\">\n\t<meta\x20name=\"viewport\"\x20content=\"width=d
+SF:evice-width,\x20initial-scale=1\">\n\t<meta\x20http-equiv=\"x-ua-compat
+SF:ible\"\x20content=\"ie=edge\">\n\t<title>Gitea:\x20Git\x20with\x20a\x20
+SF:cup\x20of\x20tea</title>\n\t<meta\x20name=\"theme-color\"\x20content=\"
+SF:#6cc644\">\n\t<meta\x20name=\"author\"\x20content=\"Gitea\x20-\x20Git\x
+SF:20with\x20a\x20cup\x20of\x20tea\"\x20/>\n\t<meta\x20name=\"description\
+SF:"\x20content=\"Gitea\x20\(Git\x20with\x20a\x20cup\x20of\x20tea\)\x20is\
+SF:x20a\x20painless\x20self-hosted\x20Git\x20service\x20written\x20in\x20G
+SF:o\"\x20/>\n\t<meta\x20name=\"keywords\"\x20content=\"go,git,self-hosted
+SF:,gitea")%r(HTTPOptions,1E87,"HTTP/1\.0\x20404\x20Not\x20Found\r\nConten
+SF:t-Type:\x20text/html;\x20charset=UTF-8\r\nSet-Cookie:\x20lang=en-US;\x2
+SF:0Path=/;\x20Max-Age=2147483647\r\nSet-Cookie:\x20i_like_gitea=b6a482f52
+SF:6711785;\x20Path=/;\x20HttpOnly\r\nSet-Cookie:\x20_csrf=yhKibMS73x8pvr3
+SF:_iR7K1bVgOlc6MTYzNTE4MTQwMjg1MDg0MjA2Nw%3D%3D;\x20Path=/;\x20Expires=Tu
+SF:e,\x2026\x20Oct\x202021\x2017:03:22\x20GMT;\x20HttpOnly\r\nX-Frame-Opti
+SF:ons:\x20SAMEORIGIN\r\nDate:\x20Mon,\x2025\x20Oct\x202021\x2017:03:22\x2
+SF:0GMT\r\n\r\n<!DOCTYPE\x20html>\n<html>\n<head\x20data-suburl=\"\">\n\t<
+SF:meta\x20charset=\"utf-8\">\n\t<meta\x20name=\"viewport\"\x20content=\"w
+SF:idth=device-width,\x20initial-scale=1\">\n\t<meta\x20http-equiv=\"x-ua-
+SF:compatible\"\x20content=\"ie=edge\">\n\t<title>Page\x20Not\x20Found\x20
+SF:-\x20Gitea:\x20Git\x20with\x20a\x20cup\x20of\x20tea</title>\n\t<meta\x2
+SF:0name=\"theme-color\"\x20content=\"#6cc644\">\n\t<meta\x20name=\"author
+SF:\"\x20content=\"Gitea\x20-\x20Git\x20with\x20a\x20cup\x20of\x20tea\"\x2
+SF:0/>\n\t<meta\x20name=\"description\"\x20content=\"Gitea\x20\(Git\x20wit
+SF:h\x20a\x20cup\x20of\x20tea\)\x20is\x20a\x20painless\x20self-hosted\x20G
+SF:it\x20service\x20written\x20in\x20Go\"\x20/>\n\t<meta\x20name=\"keyword
+SF:s\"\x20content=\"");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 25 22:35:13 2021 -- 1 IP address (1 host up) scanned in 125.15 seconds

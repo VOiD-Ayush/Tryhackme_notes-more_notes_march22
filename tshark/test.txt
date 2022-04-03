@@ -1,0 +1,38 @@
+    1   0.000000 192.168.170.8 → 192.168.170.20 DNS 70 Standard query 0x1032 TXT google.com
+    2   0.000530 192.168.170.20 → 192.168.170.8 DNS 98 Standard query response 0x1032 TXT google.com TXT
+    3   4.005222 192.168.170.8 → 192.168.170.20 DNS 70 Standard query 0xf76f MX google.com
+    4   4.837355 192.168.170.20 → 192.168.170.8 DNS 298 Standard query response 0xf76f MX google.com MX 40 smtp4.google.com MX 10 smtp5.google.com MX 10 smtp6.google.com MX 10 smtp1.google.com MX 10 smtp2.google.com MX 40 smtp3.google.com A 216.239.37.26 A 64.233.167.25 A 66.102.9.25 A 216.239.57.25 A 216.239.37.25 A 216.239.57.26
+    5  12.817185 192.168.170.8 → 192.168.170.20 DNS 70 Standard query 0x49a1 LOC google.com
+    6  12.956209 192.168.170.20 → 192.168.170.8 DNS 70 Standard query response 0x49a1 LOC google.com
+    7  20.824827 192.168.170.8 → 192.168.170.20 DNS 85 Standard query 0x9bbb PTR 104.9.192.66.in-addr.arpa
+    8  20.825333 192.168.170.20 → 192.168.170.8 DNS 129 Standard query response 0x9bbb PTR 104.9.192.66.in-addr.arpa PTR 66-192-9-104.gen.twtelecom.net
+    9  92.189905 192.168.170.8 → 192.168.170.20 DNS 74 Standard query 0x75c0 A www.netbsd.org
+   10  92.238816 192.168.170.20 → 192.168.170.8 DNS 90 Standard query response 0x75c0 A www.netbsd.org A 204.152.190.12
+   11 108.965135 192.168.170.8 → 192.168.170.20 DNS 74 Standard query 0xf0d4 AAAA www.netbsd.org
+   12 109.202803 192.168.170.20 → 192.168.170.8 DNS 102 Standard query response 0xf0d4 AAAA www.netbsd.org AAAA 2001:4f8:4:7:2e0:81ff:fe52:9a6b
+   13 169.027394 192.168.170.8 → 192.168.170.20 DNS 74 Standard query 0x7f39 AAAA www.netbsd.org
+   14 169.027781 192.168.170.20 → 192.168.170.8 DNS 102 Standard query response 0x7f39 AAAA www.netbsd.org AAAA 2001:4f8:4:7:2e0:81ff:fe52:9a6b
+   15 178.239844 192.168.170.8 → 192.168.170.20 DNS 74 Standard query 0x8db3 AAAA www.google.com
+   16 178.256382 192.168.170.20 → 192.168.170.8 DNS 94 Standard query response 0x8db3 AAAA www.google.com CNAME www.l.google.com
+   17 187.853816 192.168.170.8 → 192.168.170.20 DNS 76 Standard query 0xdca2 AAAA www.l.google.com
+   18 187.870481 192.168.170.20 → 192.168.170.8 DNS 76 Standard query response 0xdca2 AAAA www.l.google.com
+   19 228.708302 192.168.170.8 → 192.168.170.20 DNS 75 Standard query 0xbc1f AAAA www.example.com
+   20 228.941445 192.168.170.20 → 192.168.170.8 DNS 75 Standard query response 0xbc1f AAAA www.example.com
+   21 240.323938 192.168.170.8 → 192.168.170.20 DNS 79 Standard query 0x266d AAAA www.example.notginh
+   22 240.536930 192.168.170.20 → 192.168.170.8 DNS 79 Standard query response 0x266d No such name AAAA www.example.notginh
+   23 271.164734 192.168.170.8 → 192.168.170.20 DNS 71 Standard query 0xfee3 ANY www.isc.org
+   24 271.237338 192.168.170.20 → 192.168.170.8 DNS 115 Standard query response 0xfee3 ANY www.isc.org AAAA 2001:4f8:0:2::d A 204.152.184.88
+   25 271.241158 192.168.170.8 → 192.168.170.20 DNS 82 Standard query 0x5a53 PTR 1.0.0.127.in-addr.arpa
+   26 271.241746 192.168.170.20 → 192.168.170.8 DNS 105 Standard query response 0x5a53 PTR 1.0.0.127.in-addr.arpa PTR localhost
+   27 271.244120 192.168.170.8 → 192.168.170.20 DNS 67 Standard query 0x208a NS isc.org
+   28 271.259884 192.168.170.56 → 217.13.4.24  DNS 129 Standard query 0x326e SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.utelsystems.local
+   29 271.262407 192.168.170.20 → 192.168.170.8 DNS 166 Standard query response 0x208a NS isc.org NS ns-ext.nrt1.isc.org NS ns-ext.sth1.isc.org NS ns-ext.isc.org NS ns-ext.lga1.isc.org
+   30 271.279695  217.13.4.24 → 192.168.170.56 DNS 129 Standard query response 0x326e No such name SRV _ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.utelsystems.local
+   31 271.280350 192.168.170.56 → 217.13.4.24  DNS 98 Standard query 0xf161 SRV _ldap._tcp.dc._msdcs.utelsystems.local
+   32 271.297651  217.13.4.24 → 192.168.170.56 DNS 98 Standard query response 0xf161 No such name SRV _ldap._tcp.dc._msdcs.utelsystems.local
+   33 271.298194 192.168.170.56 → 217.13.4.24  DNS 140 Standard query 0x8361 SRV _ldap._tcp.05b5292b-34b8-4fb7-85a3-8beef5fd2069.domains._msdcs.utelsystems.local
+   34 271.317878  217.13.4.24 → 192.168.170.56 DNS 140 Standard query response 0x8361 No such name SRV _ldap._tcp.05b5292b-34b8-4fb7-85a3-8beef5fd2069.domains._msdcs.utelsystems.local
+   35 271.419659 192.168.170.56 → 217.13.4.24  DNS 83 Standard query 0xd060 A GRIMM.utelsystems.local
+   36 271.436583  217.13.4.24 → 192.168.170.56 DNS 83 Standard query response 0xd060 No such name A GRIMM.utelsystems.local
+   37 278.861300 192.168.170.56 → 217.13.4.24  DNS 83 Standard query 0x7663 A GRIMM.utelsystems.local
+   38 278.879313  217.13.4.24 → 192.168.170.56 DNS 83 Standard query response 0x7663 No such name A GRIMM.utelsystems.local

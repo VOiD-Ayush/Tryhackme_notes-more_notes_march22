@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Feb 26 03:47:26 2022 as: nmap -vvv -p 3389,8021 -sC -sV -oN scans/rustscan 10.10.139.98
+Nmap scan report for 10.10.139.98 [host down, received no-response]
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Feb 26 03:47:30 2022 -- 1 IP address (0 hosts up) scanned in 4.53 seconds

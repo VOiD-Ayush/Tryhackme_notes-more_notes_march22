@@ -1,0 +1,47 @@
+# Nmap 7.92 scan initiated Mon Mar 21 04:46:53 2022 as: nmap -sC -sV -v -p 80,4012,4019,5901,6001 -oN scans/ports 10.10.6.172
+Nmap scan report for 10.10.6.172
+Host is up (0.20s latency).
+
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-generator: concrete5 - 8.5.2
+|_http-title: Home :: Super-Spam
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+4012/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 86:60:04:c0:a5:36:46:67:f5:c7:24:0f:df:d0:03:14 (RSA)
+|   256 ce:d2:f6:ab:69:7f:aa:31:f5:49:70:e5:8f:62:b0:b7 (ECDSA)
+|_  256 73:a0:a1:97:c4:33:fb:f4:4a:5c:77:f6:ac:95:76:ac (ED25519)
+4019/tcp open  ftp     vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.253.221
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| drwxr-xr-x    2 ftp      ftp          4096 Feb 20  2021 IDS_logs
+|_-rw-r--r--    1 ftp      ftp           526 Feb 20  2021 note.txt
+5901/tcp open  vnc     VNC (protocol 3.8)
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|     VNC Authentication (2)
+|     Tight (16)
+|   Tight auth subtypes: 
+|_    STDV VNCAUTH_ (2)
+6001/tcp open  X11     (access denied)
+Service Info: OSs: Linux, Unix; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 21 04:47:25 2022 -- 1 IP address (1 host up) scanned in 32.38 seconds

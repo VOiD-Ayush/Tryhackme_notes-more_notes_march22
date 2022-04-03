@@ -1,0 +1,14 @@
+password123
+Password123
+crabfish
+linux123
+secret
+piggybank
+windowsxp
+starwars
+qwerty123
+qwerty
+supermario
+Luisfactor05
+james123
+ect

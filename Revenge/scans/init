@@ -1,0 +1,31 @@
+# Nmap 7.92 scan initiated Tue Mar  1 15:58:32 2022 as: nmap -A -sC -sV -vv -oN scans/init 10.10.112.3
+Increasing send delay for 10.10.112.3 from 0 to 5 due to 63 out of 208 dropped probes since last increase.
+Increasing send delay for 10.10.112.3 from 5 to 10 due to 11 out of 34 dropped probes since last increase.
+Increasing send delay for 10.10.112.3 from 10 to 20 due to 11 out of 16 dropped probes since last increase.
+Increasing send delay for 10.10.112.3 from 80 to 160 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.112.3 from 160 to 320 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.10.112.3 from 320 to 640 due to 11 out of 12 dropped probes since last increase.
+Nmap scan report for 10.10.112.3
+Host is up, received syn-ack (0.37s latency).
+Scanned at 2022-03-01 15:58:34 UTC for 538s
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 72:53:b7:7a:eb:ab:22:70:1c:f7:3c:7a:c7:76:d9:89 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBiHOfDlVoYCp0+/LM7BhujeUicHQ+HwAidwcp1yMZE3j6K/7RW3XsNSEyUR8RpVaXAHl7ThNfD2pmzGPBV9uOjNlgNuzhASOgQuz9G4hQyLh5u1Sv9QR8R9udClyRoqUwGBfdNKjqAK2Kw7OghAHXlwUxniYRLUeAD60oLjm4uIv+1QlA2t5/LL6utV2ePWOEHe8WehXPGrstJtJ8Jf/uM48s0jhLhMEewzSqR2w0LWAGDFzOdfnOvcyQtJ9FeswJRG7fWXXsOms0Fp4lhTL4fknL+PSdWEPagTjRfUIRxskkFsaxI//3EulETC+gSa+KilVRfiKAGTdrdz7RL5sl
+|   256 43:77:00:fb:da:42:02:58:52:12:7d:cd:4e:52:4f:c3 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNNoSioP7IDDu4yIVfGnhLoMTyvBuzxILnRr7rKGX0YpNShJfHLjEQRIdUoYq+/7P0wBjLoXn9g7XpLLb7UMvm4=
+|   256 2b:57:13:7c:c8:4f:1d:c2:68:67:28:3f:8e:39:30:ab (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEpROzuQcffRwKXCOz+JQ5p7QKnAQVEDUwwUkkblavyh
+80/tcp open  http    syn-ack nginx 1.14.0 (Ubuntu)
+|_http-title: Home | Rubber Ducky Inc.
+| http-methods: 
+|_  Supported Methods: GET OPTIONS HEAD
+|_http-favicon: Unknown favicon MD5: E859DC70A208F0F0242640410296E06A
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  1 16:07:32 2022 -- 1 IP address (1 host up) scanned in 540.15 seconds

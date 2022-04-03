@@ -1,0 +1,24 @@
+# Nmap 7.91 scan initiated Sat Oct 23 19:09:49 2021 as: nmap -sC -sV -vv -Pn -p 22,12340 -oN scans/ports 10.10.127.232
+Nmap scan report for 10.10.127.232
+Host is up, received user-set (0.22s latency).
+Scanned at 2021-10-23 19:09:50 IST for 19s
+
+PORT      STATE SERVICE REASON  VERSION
+22/tcp    open  ssh     syn-ack OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 09:23:62:a2:18:62:83:69:04:40:62:32:97:ff:3c:cd (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDakZyfnq0JzwuM1SD3YZ4zyizbtc9AOvhk2qCaTwJHEKyyqIjBaElNv4LpSdtV7y/C6vwUfPS34IO/mAmNtAFquBDjIuoKdw9TjjPrVBVjzFxD/9tDSe+cu6ELPHMyWOQFAYtg1CV1TQlm3p6WIID2IfYBffpfSz54wRhkTJd/+9wgYdOwfe+VRuzV8EgKq4D2cbUTjYjl0dv2f2Th8WtiRksEeaqI1fvPvk6RwyiLdV5mSD/h8HCTZgYVvrjPShW9XPE/wws82/wmVFtOPfY7WAMhtx5kiPB11H+tZSAV/xpEjXQQ9V3Pi6o4vZdUvYSbNuiN4HI4gAWnp/uqPsoR
+|   256 33:66:35:36:b0:68:06:32:c1:8a:f6:01:bc:43:38:ce (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEMyTtxVAKcLy5u87ws+h8WY+GHWg8IZI4c11KX7bOSt85IgCxox7YzOCZbUA56QOlryozIFyhzcwOeCKWtzEsA=
+|   256 14:98:e3:84:70:55:e6:60:0c:c2:09:77:f8:b7:a6:1c (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOKY0jLSRkYg0+fTDrwGOaGW442T5k1qBt7l8iAkcuCk
+12340/tcp open  http    syn-ack Apache httpd 2.4.6 ((CentOS) PHP/5.4.16)
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
+|_http-title: We&#39;ve got some trouble | 404 - Resource not found
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 23 19:10:09 2021 -- 1 IP address (1 host up) scanned in 20.40 seconds

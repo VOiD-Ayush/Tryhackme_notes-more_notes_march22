@@ -21,7 +21,7 @@ git commit -m "Adding stuff to test" -m "This is discription"
 git push 
 # pushed code online on github
 
-git push origin master
+git push origin main
 # origin is where to push
 # master is branch
 ```
